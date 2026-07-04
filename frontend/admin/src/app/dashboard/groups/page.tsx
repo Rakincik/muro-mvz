@@ -172,6 +172,7 @@ export default function GroupsPage() {
     const [assignCourseOpen, setAssignCourseOpen] = useState(false);
     const [assignCourseSearch, setAssignCourseSearch] = useState("");
     const [assignCourseSelection, setAssignCourseSelection] = useState<Set<string>>(new Set());
+    const [assignCourseMode, setAssignCourseMode] = useState<"Online" | "Offline" | "Both">("Both");
     const [allCourses, setAllCourses] = useState<{ id: string; title: string }[]>([]);
     const [loadingCourses, setLoadingCourses] = useState(false);
 
@@ -407,7 +408,7 @@ export default function GroupsPage() {
         try {
             await Promise.all(
                 Array.from(assignCourseSelection).map(courseId => 
-                    groupsApi.assignCourse(token, tenantId, selectedId, courseId, "Online")
+                    groupsApi.assignCourse(token, tenantId, selectedId, courseId, assignCourseMode)
                 )
             );
             setAssignCourseOpen(false); 
@@ -1216,6 +1217,18 @@ export default function GroupsPage() {
                                     onChange={(e) => setAssignCourseSearch(e.target.value)}
                                     className="w-full pl-12 pr-4 py-3 bg-[#E2E8F0]/20 border border-[#E2E8F0]/60 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all font-medium"
                                 />
+                            </div>
+
+                            <div className="mb-6">
+                                <label className="block text-sm font-bold text-[#0A1931] mb-2">Erişim Modu</label>
+                                <select 
+                                    value={assignCourseMode} 
+                                    onChange={(e) => setAssignCourseMode(e.target.value as "Online" | "Offline" | "Both")}
+                                    className="w-full px-4 py-3 bg-[#E2E8F0]/20 border border-[#E2E8F0]/60 rounded-xl text-sm font-medium text-[#0A1931] focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all"
+                                >
+                                    <option value="Both">İkisi Birden (Canlı Ders + Video Kayıt)</option>
+                                    <option value="Offline">Sadece Kayıtlar (Offline Video)</option>
+                                </select>
                             </div>
 
                             <div className="space-y-2 max-h-[300px] overflow-y-auto pr-1">
