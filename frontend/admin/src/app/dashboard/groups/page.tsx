@@ -29,7 +29,10 @@ import {
     PiTargetDuotone,
     PiFilePlusDuotone,
     PiFolderDuotone,
-    PiFolderOpenDuotone
+    PiFolderOpenDuotone,
+    PiMonitorPlayDuotone as MonitorPlay,
+    PiDownloadSimpleDuotone as Download,
+    PiStackDuotone as Layers
 } from "react-icons/pi";
 import { useToast } from "@/components/toast";
 import { ConfirmDialog } from "@/components/confirm-dialog";
@@ -1220,16 +1223,33 @@ export default function GroupsPage() {
                             </div>
 
                             <div className="mb-6">
-                                <label className="block text-sm font-bold text-[#0A1931] mb-2">Erişim Modu</label>
-                                <select 
-                                    value={assignCourseMode} 
-                                    onChange={(e) => setAssignCourseMode(e.target.value as "Online" | "Offline" | "Both")}
-                                    className="w-full px-4 py-3 bg-[#E2E8F0]/20 border border-[#E2E8F0]/60 rounded-xl text-sm font-medium text-[#0A1931] focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all"
-                                >
-                                    <option value="Both">İkisi Birden (Canlı Ders + Video Kayıt)</option>
-                                    <option value="Online">Sadece Canlı Ders (Online)</option>
-                                    <option value="Offline">Sadece Kayıtlar (Offline Video)</option>
-                                </select>
+                                <label className="block text-[11px] font-extrabold text-[#64748B] uppercase tracking-widest mb-3">Erişim Modu <span className="text-red-500">*</span></label>
+                                <div className="grid grid-cols-3 gap-3">
+                                    <button 
+                                        type="button"
+                                        onClick={() => setAssignCourseMode("Both")}
+                                        className={`flex flex-col items-center justify-center p-3 rounded-2xl border transition-all text-center ${assignCourseMode === "Both" ? "border-indigo-600 bg-indigo-50/30 ring-2 ring-indigo-600/20 shadow-sm text-indigo-600" : "border-[#E2E8F0] hover:border-[#A0AEC0] hover:bg-[#F8FAFC] text-[#64748B]"}`}
+                                    >
+                                        <Layers size={26} className="mb-2" />
+                                        <span className={`text-xs font-bold leading-tight ${assignCourseMode === "Both" ? "text-indigo-900" : "text-[#475569]"}`}>İkisi Birden<br/><span className="text-[10px] font-medium opacity-80">(Canlı + Video)</span></span>
+                                    </button>
+                                    <button 
+                                        type="button"
+                                        onClick={() => setAssignCourseMode("Online")}
+                                        className={`flex flex-col items-center justify-center p-3 rounded-2xl border transition-all text-center ${assignCourseMode === "Online" ? "border-emerald-600 bg-emerald-50/30 ring-2 ring-emerald-600/20 shadow-sm text-emerald-600" : "border-[#E2E8F0] hover:border-[#A0AEC0] hover:bg-[#F8FAFC] text-[#64748B]"}`}
+                                    >
+                                        <MonitorPlay size={26} className="mb-2" />
+                                        <span className={`text-xs font-bold leading-tight ${assignCourseMode === "Online" ? "text-emerald-900" : "text-[#475569]"}`}>Sadece Canlı<br/><span className="text-[10px] font-medium opacity-80">(Online Katılım)</span></span>
+                                    </button>
+                                    <button 
+                                        type="button"
+                                        onClick={() => setAssignCourseMode("Offline")}
+                                        className={`flex flex-col items-center justify-center p-3 rounded-2xl border transition-all text-center ${assignCourseMode === "Offline" ? "border-amber-600 bg-amber-50/30 ring-2 ring-amber-600/20 shadow-sm text-amber-600" : "border-[#E2E8F0] hover:border-[#A0AEC0] hover:bg-[#F8FAFC] text-[#64748B]"}`}
+                                    >
+                                        <Download size={26} className="mb-2" />
+                                        <span className={`text-xs font-bold leading-tight ${assignCourseMode === "Offline" ? "text-amber-900" : "text-[#475569]"}`}>Sadece Video<br/><span className="text-[10px] font-medium opacity-80">(Offline Kayıt)</span></span>
+                                    </button>
+                                </div>
                             </div>
 
                             <div className="space-y-2 max-h-[300px] overflow-y-auto pr-1">
