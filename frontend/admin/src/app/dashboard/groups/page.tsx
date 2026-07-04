@@ -61,20 +61,33 @@ const getEducationIcon = (type: string, size: number = 14) => {
 
 // ── Tree Item ────────────────────────────────────────────────────────────────
 function GroupTreeItem({
-    group, selected, expanded, hasChildren, onSelect, onToggle, onEdit, onDelete, onAddSubgroup
+    group, selected, expanded, hasChildren, onSelect, onToggle, onEdit, onDelete, onAddSubgroup,
+    onDragStart, onDragOver, onDragEnter, onDragLeave, onDrop, isDragOver
 }: {
     group: GroupListDto; selected: boolean; expanded: boolean; hasChildren: boolean;
     onSelect: () => void; onToggle: () => void; onEdit: () => void; onDelete: () => void; onAddSubgroup: () => void;
+    onDragStart?: (e: React.DragEvent, id: string) => void;
+    onDragOver?: (e: React.DragEvent) => void;
+    onDragEnter?: (e: React.DragEvent, id: string) => void;
+    onDragLeave?: (e: React.DragEvent, id: string) => void;
+    onDrop?: (e: React.DragEvent, targetId: string) => void;
+    isDragOver?: boolean;
 }) {
     const isEmpty = group.memberCount === 0;
     const [isHovered, setIsHovered] = useState(false);
     return (
         <div
-            className={`flex items-center gap-2 p-1.5 pr-3 rounded-lg cursor-pointer group transition-all duration-200 select-none ${selected ? "bg-blue-50/80 border border-blue-100/80 border-l-4 shadow-sm" : "border border-transparent hover:bg-slate-50"}`}
-            style={selected ? { borderLeftColor: group.color ?? "#3b82f6" } : undefined}
+            className={`flex items-center gap-2 p-1.5 pr-3 rounded-lg cursor-pointer group transition-all duration-200 select-none ${selected ? "bg-blue-50/80 border border-blue-100/80 border-l-4 shadow-sm" : "border border-transparent hover:bg-slate-50"} ${isDragOver ? "ring-2 ring-blue-500 ring-dashed bg-blue-50" : ""}`}
+            style={selected && !isDragOver ? { borderLeftColor: group.color ?? "#3b82f6" } : undefined}
             onClick={onSelect}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
+            draggable={!!onDragStart}
+            onDragStart={onDragStart ? (e) => onDragStart(e, group.id) : undefined}
+            onDragOver={onDragOver}
+            onDragEnter={onDragEnter ? (e) => onDragEnter(e, group.id) : undefined}
+            onDragLeave={onDragLeave ? (e) => onDragLeave(e, group.id) : undefined}
+            onDrop={onDrop ? (e) => onDrop(e, group.id) : undefined}
         >
             <button onClick={e => { e.stopPropagation(); onToggle(); }} 
                 className={`shrink-0 flex items-center justify-center transition-all duration-300 ${hasChildren ? `w-5 h-5 rounded ${selected ? "text-blue-600" : "text-slate-400 hover:text-slate-700 hover:bg-slate-200/50"}` : "w-5 text-transparent"}`}>
@@ -82,7 +95,7 @@ function GroupTreeItem({
             </button>
             
             <div className="shrink-0 flex items-center justify-center transition-transform group-hover:scale-110" style={{ color: group.color ?? (selected ? "#3b82f6" : "#94a3b8") }}>
-                {expanded || isHovered ? <PiFolderOpenDuotone size={18} /> : <PiFolderDuotone size={18} />}
+                {expanded || isHovered || isDragOver ? <PiFolderOpenDuotone size={18} /> : <PiFolderDuotone size={18} />}
             </div>
             
             <div className="flex-1 min-w-0">
@@ -183,6 +196,62 @@ export default function GroupsPage() {
     // Inline Creation
     const [inlineCreateParent, setInlineCreateParent] = useState<string | null>(null);
     const [inlineCreateName, setInlineCreateName] = useState("");
+
+    // Drag and Drop
+    const [draggedId, setDraggedId] = useState<string | null>(null);
+    const [dragOverId, setDragOverId] = useState<string | null>(null);
+
+    const handleDragStart = (e: React.DragEvent, id: string) => {
+        e.dataTransfer.setData("groupId", id);
+        setDraggedId(id);
+    };
+
+    const handleDragOver = (e: React.DragEvent) => {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = "move";
+    };
+
+    const handleDragEnter = (e: React.DragEvent, id: string) => {
+        e.preventDefault();
+        if (id !== draggedId) {
+            setDragOverId(id);
+        }
+    };
+
+    const handleDragLeave = (e: React.DragEvent, id: string) => {
+        e.preventDefault();
+        if (dragOverId === id) {
+            setDragOverId(null);
+        }
+    };
+
+    const handleDrop = async (e: React.DragEvent, targetId: string | null) => {
+        e.preventDefault();
+        setDragOverId(null);
+        setDraggedId(null);
+        
+        const sourceId = e.dataTransfer.getData("groupId");
+        if (!sourceId || sourceId === targetId) return;
+
+        // Prevent dropping into itself or its children
+        let currentParent = targetId;
+        while (currentParent) {
+            if (currentParent === sourceId) {
+                toastError("Hata", "Bir grubu kendi içine veya alt grubuna taşıyamazsınız.");
+                return;
+            }
+            const p = groups.find(g => g.id === currentParent);
+            currentParent = p?.parentGroupId ?? null;
+        }
+
+        try {
+            await groupsApi.update(token!, tenantId!, sourceId, { parentGroupId: targetId || undefined });
+            success("Taşındı", "Grup başarıyla taşındı.");
+            loadGroups();
+        } catch {
+            toastError("Hata", "Grup taşınırken bir sorun oluştu.");
+        }
+    };
 
     const handleInlineCreate = async (parentId: string) => {
         if (!inlineCreateName.trim() || !token || !tenantId) {
@@ -479,6 +548,31 @@ export default function GroupsPage() {
         setBulkAddSelection(next);
     };
 
+    const handleDownloadExcel = () => {
+        if (!detail || detail.members.length === 0) {
+            toastError("Hata", "İndirilecek öğrenci bulunamadı.");
+            return;
+        }
+        const headers = ["Öğrenci Adı", "E-posta", "Telefon", "Kayıt Tarihi"];
+        const rows = detail.members.map(m => [
+            `"${m.userFullName}"`,
+            `"${m.email}"`,
+            `"${m.phoneNumber ?? ""}"`,
+            `"${m.enrolledAt ? new Date(m.enrolledAt).toLocaleDateString("tr-TR") : ""}"`
+        ]);
+        const csvContent = "data:text/csv;charset=utf-8,\uFEFF" + 
+            headers.join(",") + "\n" + 
+            rows.map(e => e.join(",")).join("\n");
+        const encodedUri = encodeURI(csvContent);
+        const link = document.createElement("a");
+        link.setAttribute("href", encodedUri);
+        link.setAttribute("download", `${detail.name.replace(/[^a-z0-9]/gi, '_').toLowerCase()}_ogrenciler.csv`);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        success("İndiriliyor", "Öğrenci listesi excel (csv) olarak indiriliyor.");
+    };
+
     const nonMembers = useMemo(() => {
         if (!detail) return [];
         const memberIds = new Set(detail.members.map(m => m.userId));
@@ -530,7 +624,13 @@ export default function GroupsPage() {
                         <GroupTreeItem group={g} selected={selectedId === g.id} expanded={isExpanded}
                             hasChildren={children.length > 0} onSelect={() => setSelectedId(g.id)}
                             onToggle={() => toggle(g.id)} onEdit={() => openEdit(g)} onDelete={() => setDeleteTarget(g.id)}
-                            onAddSubgroup={() => { setInlineCreateParent(g.id); setExpanded(new Set([...expanded, g.id])); }} />
+                            onAddSubgroup={() => { setInlineCreateParent(g.id); setExpanded(new Set([...expanded, g.id])); }}
+                            onDragStart={handleDragStart}
+                            onDragOver={handleDragOver}
+                            onDragEnter={handleDragEnter}
+                            onDragLeave={handleDragLeave}
+                            onDrop={handleDrop}
+                            isDragOver={dragOverId === g.id} />
                         
                         {inlineCreateParent === g.id && (
                             <div className="flex items-center gap-2 mt-1 mb-2 relative">
@@ -624,7 +724,27 @@ export default function GroupsPage() {
                                 className="w-full pl-10 pr-4 py-3 text-sm font-medium bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl text-[#0A1931] placeholder-[#A0AEC0] focus:outline-none focus:ring-2 focus:ring-[#1B3B6F]/20 focus:bg-white transition-all shadow-inner" />
                         </div>
                     </div>
-                    <div className="flex-1 overflow-y-auto p-2">
+                    <div className={`flex-1 overflow-y-auto p-2 relative transition-colors ${dragOverId === 'root' ? 'bg-blue-50/50' : ''}`}
+                        onDragOver={handleDragOver}
+                        onDragEnter={(e) => {
+                            e.preventDefault();
+                            if (draggedId) setDragOverId('root');
+                        }}
+                        onDragLeave={(e) => {
+                            e.preventDefault();
+                            if (dragOverId === 'root' && !e.currentTarget.contains(e.relatedTarget as Node)) {
+                                setDragOverId(null);
+                            }
+                        }}
+                        onDrop={(e) => {
+                            if (dragOverId === 'root') handleDrop(e, null);
+                        }}
+                    >
+                        {dragOverId === 'root' && (
+                            <div className="absolute inset-x-2 top-2 h-12 border-2 border-dashed border-blue-400 rounded-xl bg-blue-100/80 flex items-center justify-center pointer-events-none z-10 shadow-sm">
+                                <span className="text-sm font-bold text-blue-700">Ana Klasöre Taşı (Kök Dizin)</span>
+                            </div>
+                        )}
                         {loading ? (
                             <div className="space-y-2 p-2">{[...Array(5)].map((_, i) => <div key={i} className="h-12 bg-[#E2E8F0]/40 rounded-xl animate-pulse" />)}</div>
                         ) : treeItems.length === 0 ? (
@@ -738,6 +858,10 @@ export default function GroupsPage() {
                                                         </button></Tooltip>
                                                     </div>
                                                 )}
+                                                <button onClick={handleDownloadExcel}
+                                                    className="px-3 py-1.5 text-xs bg-emerald-50 text-emerald-700 border border-emerald-200 rounded-lg flex items-center gap-1.5 hover:bg-emerald-100 font-bold transition-colors shadow-sm">
+                                                    <Download size={14} /> Excel İndir
+                                                </button>
                                                 <button onClick={() => setBulkRegisterOpen(true)}
                                                     className="px-3 py-1.5 text-xs bg-white text-[#1B3B6F] border border-[#E2E8F0] rounded-lg flex items-center gap-1.5 hover:bg-[#F8FAFC] font-bold">
                                                     <PiFilePlusDuotone size={16} /> Excel ile Toplu Kayıt
