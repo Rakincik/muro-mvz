@@ -3,7 +3,6 @@ import uuid
 
 excel_file = "akademikmasa.xlsx"
 sql_output_file = "import_akm_courses.sql"
-tenant_id = "00000000-0000-0000-0000-000000000000"
 
 wb = openpyxl.load_workbook(excel_file, data_only=True)
 s2 = wb["Sayfa2"]
@@ -33,20 +32,19 @@ for row in s2.iter_rows(min_row=3, values_only=True):
 course_dict = {c: str(uuid.uuid4()) for c in courses}
 
 with open(sql_output_file, "w", encoding="utf-8") as f:
-    f.write("BEGIN;\n\n")
     
     for c, c_id in course_dict.items():
         f.write(f"""
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '{c_id}', '{c.replace("'", "''")}', '', true, CURRENT_TIMESTAMP, '{tenant_id}'
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsPublished", "CreatedAt")
+SELECT '{c_id}', '{c.replace("'", "''")}', '', true, CURRENT_TIMESTAMP
 FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '{c.replace("'", "''")}');
 """)
         
     for g in groups.values():
         f.write(f"""
-INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '{g['id']}', '{g['name'].replace("'", "''")}', CURRENT_TIMESTAMP, '{tenant_id}'
+INSERT INTO "Groups" ("Id", "Name", "CreatedAt")
+SELECT '{g['id']}', '{g['name'].replace("'", "''")}', CURRENT_TIMESTAMP
 FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '{g['name'].replace("'", "''")}');
 """)
@@ -62,7 +60,6 @@ AND NOT EXISTS (
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '{grup_adi.replace("'", "''")}')
 );
 """)
-        
-    f.write("\nCOMMIT;\n")
+    # Done
 
 print(f"Generated {len(course_dict)} courses and {len(groups)} groups in {sql_output_file}")

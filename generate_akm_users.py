@@ -5,7 +5,6 @@ import re
 
 excel_file = "akademikmasa.xlsx"
 sql_output_file = "import_akm_users.sql"
-tenant_id = "00000000-0000-0000-0000-000000000000"
 
 def clean_phone(p):
     if not p: return None
@@ -52,13 +51,12 @@ for row in s2.iter_rows(min_row=3, values_only=True):
             group_assignments.append((users[ad_soyad]["id"], grup_adi))
 
 with open(sql_output_file, "w", encoding="utf-8") as f:
-    f.write("BEGIN;\n\n")
     
     for u in users.values():
         pw = u["phone"] if u["phone"] else "123456"
         f.write(f"""
-INSERT INTO "Users" ("Id", "FirstName", "LastName", "Email", "Phone", "PasswordHash", "Role", "IsActive", "CreatedAt", "TenantId", "Username")
-SELECT '{u['id']}', '{u['first_name'].replace("'", "''")}', '{u['last_name'].replace("'", "''")}', '{u['email'].replace("'", "''")}', {f"'{u['phone']}'" if u['phone'] else 'NULL'}, '{pw}', 'Student', true, CURRENT_TIMESTAMP, '{tenant_id}', '{u['email'].replace("'", "''")}'
+INSERT INTO "Users" ("Id", "FirstName", "LastName", "Email", "Phone", "PasswordHash", "Role", "IsActive", "CreatedAt", "Username")
+SELECT '{u['id']}', '{u['first_name'].replace("'", "''")}', '{u['last_name'].replace("'", "''")}', '{u['email'].replace("'", "''")}', {f"'{u['phone']}'" if u['phone'] else 'NULL'}, '{pw}', 'Student', true, CURRENT_TIMESTAMP, '{u['email'].replace("'", "''")}'
 FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Users" WHERE "Email" = '{u['email'].replace("'", "''")}');
 """)
@@ -73,6 +71,5 @@ AND NOT EXISTS (
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '{group_name.replace("'", "''")}')
 );
 """)
-        
-    f.write("\nCOMMIT;\n")
+    # Done
 print(f"Generated {len(users)} users and {len(group_assignments)} assignments in {sql_output_file}")
