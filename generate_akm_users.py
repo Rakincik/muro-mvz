@@ -59,6 +59,7 @@ with open(sql_output_file, "w", encoding="utf-8") as f:
         f.write(f"""
 INSERT INTO "Users" ("Id", "FirstName", "LastName", "Email", "Phone", "PasswordHash", "Role", "IsActive", "CreatedAt", "TenantId", "Username")
 SELECT '{u['id']}', '{u['first_name'].replace("'", "''")}', '{u['last_name'].replace("'", "''")}', '{u['email'].replace("'", "''")}', {f"'{u['phone']}'" if u['phone'] else 'NULL'}, '{pw}', 'Student', true, CURRENT_TIMESTAMP, '{tenant_id}', '{u['email'].replace("'", "''")}'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Users" WHERE "Email" = '{u['email'].replace("'", "''")}');
 """)
         
@@ -66,7 +67,7 @@ WHERE NOT EXISTS (SELECT 1 FROM "Users" WHERE "Email" = '{u['email'].replace("'"
         f.write(f"""
 INSERT INTO "UserGroups" ("UserId", "GroupId")
 SELECT '{user_id}', "Id" FROM "Groups" WHERE "Name" = '{group_name.replace("'", "''")}'
-WHERE NOT EXISTS (
+AND NOT EXISTS (
     SELECT 1 FROM "UserGroups" 
     WHERE "UserId" = '{user_id}' 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '{group_name.replace("'", "''")}')

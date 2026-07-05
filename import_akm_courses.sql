@@ -2,5779 +2,3113 @@ BEGIN;
 
 
 INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '8018fb5b-e542-4357-9b39-e88cf9ca1097', '2023 Edebiyat Alan Eğitimi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Edebiyat Alan Eğitimi');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '0dfb0267-d43e-4a18-bd61-b10a15d9e10a', '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Eski Türk Dili', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Eski Türk Dili');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '52313ee7-9b42-4834-b990-1076649b0f1c', '2025 Halk Edebiyatı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '1443a921-8726-406a-bfef-59912460d275', '2025 Çocuk Edebiyatı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Çocuk Edebiyatı');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'bd49804f-46c2-400f-ba0a-93b0cd7969b3', '2026 Çocuk Edebiyatı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Çocuk Edebiyatı');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '314b5c14-2e0e-407c-b120-c3bdd0b08a98', 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '7179a7f5-292c-4e25-bee4-d0163cbe202c', 'Gece Nöbeti - Dil Bilgisi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Gece Nöbeti - Dil Bilgisi');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '21b56f21-9798-4ac0-a2a7-729fa61799ed', '2023 Eski Türk Edebiyatı (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Eski Türk Edebiyatı (TDE)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'cd1371ad-01f4-49a2-a010-579b75bf8b38', '2026 AGS KAMP FATMA HOCA', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 AGS KAMP FATMA HOCA');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '0aa3203e-9613-44f3-b44a-21e177c01fc1', '2025 Geleneksel Soru Çözüm Kampı Zuhal Evliyaoğlu - 4 Temel Dil Becerisi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Zuhal Evliyaoğlu - 4 Temel Dil Becerisi');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '9b3c3a6a-b5ca-44de-9be5-e49cd4947cb2', '2023 Tarih', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Tarih');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '911a16ab-ce47-43b1-9ba8-8dfeea671b23', 'Dil Bilimi YELDA ÜNAL', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Dil Bilimi YELDA ÜNAL');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '43c6e7f5-43d5-4081-bbdf-5571b8ea4685', '2026 Tarih', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Tarih');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '06e3344b-34ba-4144-8b5a-654dd946c21a', '2026 - 4 TEMEL BECERİ CEPTE KAMPI', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 - 4 TEMEL BECERİ CEPTE KAMPI');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'f4702152-65b2-4c47-8254-d997f5b41b84', '2025 Yeni Türk Edebiyatı (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı (TDE)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '26f138ef-6fb3-4ac0-b8b1-920ef16db30a', 'SON BAKIŞ', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'SON BAKIŞ');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '0f056d62-d67b-4216-b7ab-dc800056ddac', '2023 Yabancılara Türkçe Öğretimi (TÜRKÇE A)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Yabancılara Türkçe Öğretimi (TÜRKÇE A)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '40e622b9-f3d0-4af5-9228-54cde761067a', '2025 Eski Türk Edebiyatı - İlker Hayat', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - İlker Hayat');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'e068d6a7-2c64-4f64-842a-d456d0fcddc1', '2025 NOKTA ATIŞI KAMPI - 4 TEMEL BECERİ', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - 4 TEMEL BECERİ');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '2e269ba7-7060-4bd5-a12c-34bc9bbc06aa', '2026 NOKTA ATIŞI Dört Temel Beceri - ZUHAL EVLİYAOĞLU', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dört Temel Beceri - ZUHAL EVLİYAOĞLU');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '43ed0385-530e-40b7-b110-1eb431baad30', '2026 Maarif Modeli - Program okuryazarlığı ve Temeller- Ölçme', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Maarif Modeli - Program okuryazarlığı ve Temeller- Ölçme');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'da9a8ec2-b5ad-43a4-ac6b-803a77cdb852', '2023 Halk Edebiyatı (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Halk Edebiyatı (TDE)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '2727ed82-e04f-4506-888e-743574bca0b7', '2025 - 4 Temel Beceri Cepte Kampı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 - 4 Temel Beceri Cepte Kampı');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'dae9eb17-c5fa-4b01-b916-4ac6abfb7b82', 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'b6bb0cfd-938f-42df-a384-377eb7663b62', '2023 Öğrenme Psikolojisi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Öğrenme Psikolojisi');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'ff601c96-67c2-4965-b557-29d235e35a95', '2023 Matematik', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Matematik');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'fdb1ced8-c6a2-408e-8fcf-2ef1937b9fc9', '2025 - BEYİT ŞERHİ', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'f3a41638-f4a8-49a7-aa5b-97daf4c3a479', 'Eski Türk Edebiyatı (Nokta Atışı)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (Nokta Atışı)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'd9d73d14-8a06-46a1-94ff-108cc10af5d4', '2024 Coğrafya', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Coğrafya');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '3b7a11ca-b9eb-472e-aa57-c8e9b06786ca', '2024 Tarih', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Tarih');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '0261af79-b95a-4a0a-8570-b097fee95112', '2024 Dil Bilimi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Dil Bilimi');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '9e8f7a0f-44a3-421e-9d25-9b991d7a8f5b', '2024 KAMP Ölçme ve Değerlendirme', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 KAMP Ölçme ve Değerlendirme');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '90f65817-b3cd-4607-bfb0-a8e4ce5b3a25', '2024 Program Geliştirme - Sınıf Yönetimi - Materyal', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Program Geliştirme - Sınıf Yönetimi - Materyal');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '4362b7a9-5196-4297-8180-792e07123b60', '2026 Dil Bilgisi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Dil Bilgisi');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'f46ce2d5-382e-4968-b06c-cbbe55ee4e77', '2024 Gelişim Psikolojisi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Gelişim Psikolojisi');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '7ffb50c1-8ef3-47bd-98f0-a3eaecf8e6b5', '2025 Eğitimin Temel Kavramları', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Eğitimin Temel Kavramları');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '2d7748e1-4f86-460b-abe8-b7efc7ab0357', '2024 4 Temel Beceri (Türkçe)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 4 Temel Beceri (Türkçe)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '4af9598e-ad81-44f4-ab40-def5cf0a57cc', '2024 Eski Türk Edebiyatı (Türkçe)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (Türkçe)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '29598f10-975f-433c-a7be-15b9f719eee5', '2025 NOKTA ATIŞI KAMPI - ÇOCUK EDEBİYATI', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - ÇOCUK EDEBİYATI');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'ae832e15-ca2d-4edc-9d6b-81b011af71f1', '2025 Psikolojik Temel', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Psikolojik Temel');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '62d844b1-bb34-46ad-b6c7-fbfb894249e5', '2025 Maarif Modeli', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Maarif Modeli');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '0aec1c06-c93b-41ea-905e-9de98db4c4ca', '2025 Öğretmenlik Mesleğinde Etik', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Öğretmenlik Mesleğinde Etik');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'a0a9177d-f6ef-479e-922c-15e6b7ee4e67', 'KPSS KORK BİZDEN GELİYORUZ', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'KPSS KORK BİZDEN GELİYORUZ');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '51f4f4d1-c72a-4a42-bb82-8a71680293d4', 'Dil Bilgisi (Yelda Ünal)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Dil Bilgisi (Yelda Ünal)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '5a137017-1a02-4624-8f2d-195253af7a2c', '2025 Geleneksel Soru Çözüm Kampı Soner Özkan - Dil Bilimi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Soner Özkan - Dil Bilimi');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '0cee819a-9fe6-4a80-9871-6a77580ba258', '2025 Anayasa ve Mevzuat', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Anayasa ve Mevzuat');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '6016e597-a41a-4281-8fdd-187a40cea39b', '2024 Yeni Türk Edebiyatı (Türkçe)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Yeni Türk Edebiyatı (Türkçe)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '4a393f16-fbf2-497f-82d0-c98714095c90', '2025 Dil Bilgisi (Yeni Türk Dili)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Dil Bilgisi (Yeni Türk Dili)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '63cdcf04-de50-4c55-ad1a-27a295051dcc', '2024 Rehberlik', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Rehberlik');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '4eb4fba1-4709-4a48-85b5-0d43f0dcfbcc', 'Motivasyon 2024', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Motivasyon 2024');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '4e5a7909-d9ea-411e-b933-6626ea4c2c63', 'Dil Bilimi 1', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Dil Bilimi 1');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '79158d67-062c-45e7-a7b5-58fa4757d581', '2024 Öğrenme Psikolojisi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Öğrenme Psikolojisi');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '13a586af-b5c3-4ef7-9a59-24656accacf0', '2025 NOKTA ATIŞI KAMPI - EDEBİYAT BİLG TEO ve DÜNYA EDB', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - EDEBİYAT BİLG TEO ve DÜNYA EDB');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '4cd7e09c-80a9-45e7-92e6-e770af6d274d', '2026 NOKTA ATIŞI Dünya Edebiyatı ve Teorileri - Fatih Mehmet MUŞ', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dünya Edebiyatı ve Teorileri - Fatih Mehmet MUŞ');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '3027efd7-9caf-4074-97a4-78fdfd518567', '2026 Dil Bilimi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Dil Bilimi');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '30e92b19-7a00-4079-a4cb-5bac81feebc2', '2025 Eğitim Teknolojileri', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Eğitim Teknolojileri');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '4db93a62-0fd0-4be5-913b-b3ac28e76caa', '2025 Türkçe ve Sözel Mantık', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Türkçe ve Sözel Mantık');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '7e8b7ba6-fbdb-4b6e-ab1d-3dce33f72687', '2026 AGS KAMP ZUHAL HOCA', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 AGS KAMP ZUHAL HOCA');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'd615c7c6-0940-420f-b79c-c4510634493b', '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (GELENEKSEL 750 SORU KAMPI)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (GELENEKSEL 750 SORU KAMPI)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'a3176233-0838-4567-833c-afe2cf0d1eca', '2025 Geleneksel Soru Çözümü Kampı - Murat Aytekin - Eski Türk Edebiyatı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözümü Kampı - Murat Aytekin - Eski Türk Edebiyatı');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '3c51b10e-8e66-4869-8d00-68ff4a60365f', '2025 Eski Türk Dili (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Eski Türk Dili (TDE)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '8372c62d-d966-4785-9db2-886576f19cb4', '2026 AGS KAMP Türkçe ve Sözel Mantık', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 AGS KAMP Türkçe ve Sözel Mantık');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'b3ddecc2-8a32-4ea8-a0fd-c3efc58aa5f6', 'Dil Bilimi (GELENEKSEL 750 SORU KAMPI)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Dil Bilimi (GELENEKSEL 750 SORU KAMPI)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'cc403fed-f4c2-41bd-9492-8b6358e998fd', '2023 Eski Türk Edebiyatı (TÜRKÇE A)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Eski Türk Edebiyatı (TÜRKÇE A)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '82572b74-cd73-429c-ad7e-e020de9a21b2', 'AGS Türkçe KAMPI', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'AGS Türkçe KAMPI');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'f08c86b3-7166-493a-b303-3566d0c4f3c3', '2026 Rehberlik ve Motivasyon', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Rehberlik ve Motivasyon');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '4d2d5880-755a-4ed7-832d-ca5a6e925e4b', '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '701e7d81-8744-4700-952d-71fda535212d', '2023 Program Geliştirme - Sınıf Yönetimi - Materyal', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Program Geliştirme - Sınıf Yönetimi - Materyal');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'ea91755a-f392-4ff5-bd53-2bfcda5c6f22', 'AGS Matematik KAMPI', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'AGS Matematik KAMPI');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'cbdfad22-757b-4752-ab6b-3f9724b0c416', '850 Soru Çözüm Kampı - Dil Bilgisi - Harun Dinçoğlu', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilgisi - Harun Dinçoğlu');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '13cd9077-44ed-4d9a-a58f-7c67489b9c03', '2026 AGS KAMP ERDAL HOCA', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 AGS KAMP ERDAL HOCA');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '0b80b833-ef53-4c2e-b93c-b91afaad764c', '2024 KAMP Rehberlik', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 KAMP Rehberlik');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '8deebe3d-c9d0-48a8-a36e-c67650b36a52', '2024 Dil Bilgisi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Dil Bilgisi');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'e6858d86-f56d-45d5-8e47-15a53d2c52b8', '2024 Çocuk Edebiyatı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Çocuk Edebiyatı');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '2913b93d-934f-41f6-8d64-3d94ee984033', '2024 Eski Türk Dili (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Eski Türk Dili (TDE)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '8b3ec048-ea37-4f20-8a19-354352e492e0', '2023 Edebiyat Bilgi ve Teorileri (TÜRKÇE A)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Edebiyat Bilgi ve Teorileri (TÜRKÇE A)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '97d174db-a816-4133-badb-5e55972945a3', '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '7e9fcdc3-7131-4668-b155-c37d390c28ec', '2024 Vatandaşlık', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Vatandaşlık');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '63b87dbf-c90a-41ec-af0f-c10c512cfe02', '2025 Kuramlar - Modeller ve İlkeler', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Kuramlar - Modeller ve İlkeler');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '5d679fab-24a8-4ec6-934f-5e179dcb30e5', '2026 NOKTA ATIŞI Türk Halk Edebiyatı - Bülent DEMİR', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Türk Halk Edebiyatı - Bülent DEMİR');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '10725a0c-b170-4840-a962-7cf94f9b08e2', '2025 NOKTA ATIŞI KAMPI - ESKİ TÜRK EDEBİYATI', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - ESKİ TÜRK EDEBİYATI');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'd1d50c10-d4aa-446b-ad42-f321c993654c', '2024 KAMP ÖYT PG', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 KAMP ÖYT PG');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '1210141f-d57e-4594-8da3-c79b66d0e1f2', 'Dil Bilimi (Nokta Atışı)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Dil Bilimi (Nokta Atışı)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '8f5886a8-4792-4e4a-801d-464c8fb4f5ab', '2025 Rehberlik Ve Motivasyon', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'de2dc810-270c-4168-a680-1482290e18cf', 'AGS 1 Kampı (Eğitim Bilimleri İçeriği)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'AGS 1 Kampı (Eğitim Bilimleri İçeriği)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'b166756d-5d6f-4df8-b480-ada3d76dd3c6', '2024 KAMP Türkçe', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 KAMP Türkçe');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '81f10eec-1266-4f8d-81fe-a2f57c95366f', '2026 - Dil Bilimi Tekrar (Emir Hoca)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 - Dil Bilimi Tekrar (Emir Hoca)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'dc266587-2d38-4298-95ee-9d5c4995169d', '2026 Batı Edebiyatı ve Teoriler', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Batı Edebiyatı ve Teoriler');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '46271338-ef8c-459b-aa82-145cdc1564b2', '850 Soru Çözüm Kampı - 4 Temel Beceri - Zuhal Bedirhan Evliyaoğlu', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - 4 Temel Beceri - Zuhal Bedirhan Evliyaoğlu');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '7851cf57-f36c-40c0-81a4-fd43870191a8', '850 Soru Çözüm Kampı - Çocuk Edebiyatı - Gizem Hoca', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Çocuk Edebiyatı - Gizem Hoca');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'd80eeed3-3099-415a-aa05-d2e112f6f6ae', '2024 Matematik', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Matematik');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'e24ea135-1f85-460c-8caa-c1b08fe1eac0', 'AGS Tarih KAMPI', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'AGS Tarih KAMPI');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'c5c27bfa-fa21-4cea-b4db-e65c2e255ff4', '2023 Dünya Edebiyatı (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Dünya Edebiyatı (TDE)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '2e059829-51c0-41a1-a4e0-055057e4eab4', 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'ced0db11-460a-4e66-89fe-757718811c96', 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '60e5a8a1-6b41-4112-b4cc-7497eae5f7dc', '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '877fda4d-35c5-4bfd-89ba-992e8a340379', 'Deneme Dersi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Deneme Dersi');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '665adc0c-147c-4474-b8e6-6db161fd5dcb', 'Gece Nöbeti - Beyit Şerhi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Gece Nöbeti - Beyit Şerhi');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'db102723-9599-4e09-8a64-9591daab27a0', '2026 NOKTA ATIŞI Eski Türk Edebiyatı - İlker HAYAT', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Eski Türk Edebiyatı - İlker HAYAT');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '61e1a3bd-f5a6-4f78-b7e0-bfe3adc84b71', '2024 KAMP Gelişim Psikolojisi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 KAMP Gelişim Psikolojisi');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '464ecd6a-ff13-4fc7-a9e3-5b288255a61e', '2026 Eski Türk Edebiyatı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '4a8ea08b-11d9-427b-b93b-4d62431df10c', '2025 Türk Milli Eğitim Sistemi ve Yapısı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Türk Milli Eğitim Sistemi ve Yapısı');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '668efbe0-d61c-4a56-b087-e289123e9547', '2024 Yeni Türk Edebiyatı (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Yeni Türk Edebiyatı (TDE)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '96ec959f-5935-45b6-881c-bc4527bca7a9', '2023 Çocuk Edebiyatı (TÜRKÇE A)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Çocuk Edebiyatı (TÜRKÇE A)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '058e20d1-e0bb-4f95-9ded-cd1ac1b5d2ee', 'Dil Bilimi Soru Analizi - Umut Hoca', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Dil Bilimi Soru Analizi - Umut Hoca');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '0c246247-84be-4ec9-8631-723d8b312451', '2026 Gelişim Psikolojisi - Öğrenme Psikolojisi - Rehberlik', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Gelişim Psikolojisi - Öğrenme Psikolojisi - Rehberlik');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'e1c50999-c861-42db-92f0-84d3eadcc158', '850 Soru Çözüm Kampı - Dünya Edebiyatı - Edebiyat Bilg. Teo . - Fatih Mehmet Muş', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dünya Edebiyatı - Edebiyat Bilg. Teo . - Fatih Mehmet Muş');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '6fafb682-705f-4daa-ad49-be7862c7a3bf', '2025 NOKTA ATIŞI KAMPI - YENİ TÜRK EDB ve DİL BİLGİSİ', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - YENİ TÜRK EDB ve DİL BİLGİSİ');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '6b7f8bd1-ed80-4023-bd73-662d193338d2', '2026 Anayasa ve Mevzuat', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Anayasa ve Mevzuat');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '311301be-d30a-4b14-8c88-aa319f83b4b9', '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'b8fd9a0a-54c9-40e6-a570-6cc7a4baf449', 'Edebiyat Alan Eğitimi(Geleneksel 750 Soru Kampı)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Edebiyat Alan Eğitimi(Geleneksel 750 Soru Kampı)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'c8fb53e5-48e6-4e6d-8700-fb6da5c5d4ef', '2025 Yeni Türk Edebiyatı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '2975e86f-c2dc-4eab-91b4-cb00df2a844b', '2026 Kazanım İncelemeleri', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Kazanım İncelemeleri');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '42ca9e5b-9d1e-4333-b5ac-d89c9c9cb764', '2026 Yeni Türk Edebiyatı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Yeni Türk Edebiyatı');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'e47adc46-9db9-4ba4-b7b2-c17e3e7aa047', '2024 Halk Edebiyatı (Türkçe)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Halk Edebiyatı (Türkçe)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '949dd942-e9f3-4c7b-8cd1-8e5b836ca951', '2026 AGS Türkçe ve Sözel Mantık', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 AGS Türkçe ve Sözel Mantık');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '706ce762-21b2-42af-be80-4ff2795d7e11', 'Edebiyat Bilgi Teorileri ve Dünya Edebiyatı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Dünya Edebiyatı');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '4888995e-65e1-483a-a0bb-d94d75787078', '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '0cc6bd18-dcbd-4632-842a-8596f332bf4f', '2023 Vatandaşlık', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Vatandaşlık');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'c311b080-5092-4d38-a179-fff7f0e56e7f', 'AGS Coğrafya KAMPI', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'AGS Coğrafya KAMPI');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'd4dc06d1-4d8a-42fa-b6ce-a0564bd83291', '2024 ÖYT', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 ÖYT');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '36a519a5-145d-4eef-92b1-c33765e70c93', '2025 Felsefi Temel', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Felsefi Temel');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '910edb5d-b7e8-4ed9-bacd-74f500c37e54', '2025 NOKTA ATIŞI KAMPI - DİL BİLİMİ', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - DİL BİLİMİ');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'bd674915-cdc2-49d2-849d-a71d83d42179', '2026 Halk Edebiyatı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Halk Edebiyatı');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '6bcbdb85-bf0a-43bd-a636-6c6a73a8f767', '2023 ÖYT', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 ÖYT');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '747ef9f4-f313-4b77-9eaa-78278f6f3c37', '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'a0b365de-1387-4100-bccd-bff79fa68c4a', '2023 Türkçe ve Sözel Mantık', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Türkçe ve Sözel Mantık');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'd5abd965-0a41-4a00-b124-3abe8fe52c03', '2026 4 Temel Beceri', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 4 Temel Beceri');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'b406f96b-67e2-491e-8766-7fe8860f6cea', '2024 Alan Eğitimi (Türkçe)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Alan Eğitimi (Türkçe)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '21a732af-18c7-4155-904d-48997dfec7b2', '2023 Yeni Türk Edebiyatı (TÜRKÇE A)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Yeni Türk Edebiyatı (TÜRKÇE A)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'a2f67ec3-f106-4ab4-b55e-11f400ddd089', '2023 Rehberlik ve Özel Eğitim', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Rehberlik ve Özel Eğitim');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '68600cb5-7245-44b6-83aa-38b0ce77de0f', '2025 Dil Bilimi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Dil Bilimi');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'ba3b1568-49d7-41e8-8357-e7d7e6f29ad9', '2024 Yabancılara Türkçe Öğretimi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Yabancılara Türkçe Öğretimi');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '05488d31-2efc-436f-8de7-20a1ad6c4f7f', '35 Soru Cepte 2024', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '66c5a7e6-3ab8-4230-8590-37195fdadef1', '35 Soru Cepte 2024', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '35 Soru Cepte 2024');
 
 INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'ac217d49-2133-49bb-9e1c-35dfbba2f0d6', '15 BİN ATAMA MÜLAKAT SÜRECİ', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '15 BİN ATAMA MÜLAKAT SÜRECİ');
+SELECT 'fb59d7ae-b628-40ad-ad34-7fbd8c967e56', '2024 KAMP Ölçme ve Değerlendirme', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 KAMP Ölçme ve Değerlendirme');
 
 INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '781e882d-e7b9-45f2-9e4d-335cc01c734c', '2025 Eski Türk Edebiyatı - Murat Aytekin', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - Murat Aytekin');
+SELECT 'abff3a44-2960-4092-87aa-9957460592d8', '850 Soru Çözüm Kampı - Çocuk Edebiyatı - Gizem Hoca', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Çocuk Edebiyatı - Gizem Hoca');
 
 INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '81708faf-d6f5-49cb-9183-d5cdb88c1386', '2024-2025 Planlama', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024-2025 Planlama');
+SELECT '056a223f-745f-41b5-99e6-20fe4182dfbf', '2024 Gelişim Psikolojisi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Gelişim Psikolojisi');
 
 INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '4820af78-0845-4668-bd75-9f1777f0347c', '2024 KAMP Coğrafya', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 KAMP Coğrafya');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '7d3ac296-9a43-4d83-a777-32e89d6cfc81', '2026 Eğitimin Temel Kavramları - Felsefi Temel - ÖYT - Materyal - Sınıf Yönetimi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Eğitimin Temel Kavramları - Felsefi Temel - ÖYT - Materyal - Sınıf Yönetimi');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '785ae272-a0e6-4806-b79e-d41ef5cc37f5', '2026 NOKTA ATIŞI Çocuk Edebiyatı - Gizem URAL', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Çocuk Edebiyatı - Gizem URAL');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '28474bec-9c81-45e5-9ead-c7fc35db8603', '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - İlker Hayat', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - İlker Hayat');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '47e5742d-5b5e-484c-ac40-d2e81edef028', '2026 Matematik', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Matematik');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '40bddd7c-b8d3-4677-9a06-f6a9e3fbcbf7', '850 Soru Çözüm Kampı - Dil Bilimi - Emir Hoca', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilimi - Emir Hoca');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '8aba1486-8b6a-4cb6-8a75-4e2d6a03ac3c', 'Edebiyat Bilgi Teorileri ve Batı Edebiyatı (Akımlar - Sanatçılar) (Nokta Atışı)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Batı Edebiyatı (Akımlar - Sanatçılar) (Nokta Atışı)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '09dc9423-c2eb-4905-9bc3-ca2e52f78bfd', 'Yeni Türk Çıkmış Soru Çözümü', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Yeni Türk Çıkmış Soru Çözümü');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'aab4ec80-9670-4b85-8278-5d0e2f45221d', '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'dca104ee-a63c-42d8-bbc8-1204b5cf0518', 'AGS Anayasa ve Mevzuat KAMPI', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '6669af20-9bcf-4abc-93c2-6d3bafc03fa5', '2025 Halk Edebiyatı (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı (TDE)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'f2596fe2-b142-446f-8a05-5707050eb544', '2026 Eski Türk Edebiyatı - Murat Hoca', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı - Murat Hoca');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '27fdd332-0414-4557-b4dd-720a064a4618', '850 Soru Çözüm Kampı - Halk Edebiyatı - Bülent Hoca', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Halk Edebiyatı - Bülent Hoca');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '869f6c8c-03f0-491c-93a0-303c3d69c2cf', '2026 AGS KAMP Coğrafya', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 AGS KAMP Coğrafya');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'c830bd07-1f0b-483e-90ea-996c812303dc', '2025 Geleneksel Soru Çözüm Kampı Gizem Ural - Çocuk Edb.', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Gizem Ural - Çocuk Edb.');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '973552f5-aad1-47ef-8257-cd56358c0ca0', '850 Soru Çözüm Kampı - Dil Bilimi - Soner Hoca', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilimi - Soner Hoca');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '1ac306b4-94c7-4f69-a7f5-571ab819cd98', 'Halk Edebiyatı - Çocuk Edebiyatı (Nokta Atışı)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Halk Edebiyatı - Çocuk Edebiyatı (Nokta Atışı)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '6631f049-91f8-4386-b23d-279b20cd1eac', '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '522b5dc2-5208-459c-b9b4-ad7fc987ad9a', '2024 Eski Türk Edebiyatı (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (TDE)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '18417e63-4c03-48e2-9af3-1be0f03d56c9', '2024 KAMP Vatandaşlık', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 KAMP Vatandaşlık');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'b1fe1e78-ffb6-4738-8550-ce976d3c4f3d', '2025 4 Temel Beceri Soru Çözümü', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri Soru Çözümü');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '3425a6b2-84ec-40f6-88c7-b259cf2ce79d', '2026 - Dünya Edebiyatı Tekrar (Harun Dinçoğlu)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 - Dünya Edebiyatı Tekrar (Harun Dinçoğlu)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '21fee1f7-56d6-4147-a05c-60caddc66a11', 'Yelda Ünal - Eski Türk Dili 1 (Konu Anlatımı)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Yelda Ünal - Eski Türk Dili 1 (Konu Anlatımı)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'ab13d288-1532-4fd2-8547-2379647ae4d2', '2024 Türkçe', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Türkçe');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '29985dc8-54e2-4944-bc11-6c502a960473', '2026 Coğrafya', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Coğrafya');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'de2ca9da-8855-4cf4-8d53-d7304532d37a', '2023 Dünya Edebiyatı (TÜRKÇE A)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Dünya Edebiyatı (TÜRKÇE A)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'e3a382bd-69f8-49a2-9ce7-54adbb6479c6', '2024 KAMP Tarih', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 KAMP Tarih');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '72229ff2-e249-47d3-8531-7b633985e61a', '2025 Toplumsal - Ekonomik - Tarihsel Temeller', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Toplumsal - Ekonomik - Tarihsel Temeller');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '4d78c7df-cfae-4d19-91b8-5e609e3c21de', '2023 Ölçme ve Değerlendirme', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Ölçme ve Değerlendirme');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '47d58542-4e8f-4d9b-9ebd-ec83bce1a8af', '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (Nokta Atışı)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '4fedd393-53ea-44fe-b2d0-1e6594f69a9b', '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (Nokta Atışı)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (Nokta Atışı)');
 
 INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '59161f62-413a-46a2-97f1-1c70f635cc78', '2023 Gelişim Psikolojisi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Gelişim Psikolojisi');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '87de3b59-856b-451a-bc80-c87d13508ec8', '2025 Eski Türk Edebiyatı (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı (TDE)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'a08301d0-8e4b-4ddb-96c8-2188d010e7db', 'YELDA HOCA 2026', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'YELDA HOCA 2026');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'be22563c-9109-4835-972f-54643aceb697', '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - Murat Hoca', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - Murat Hoca');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '78145cc7-6cd7-4598-be0d-6cd7973c8830', '2026 AGS KAMP Matematik', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 AGS KAMP Matematik');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '5ea93d92-ede0-4caa-b682-4149bb297af7', 'Dil aileleri', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Dil aileleri');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '077af6bd-9753-4d9a-9667-2f251b524565', '2023 Yeni Türk Edebiyatı (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Yeni Türk Edebiyatı (TDE)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'd5498de4-c0ad-4d3d-b9f1-62f56363eeac', '2025 4 Temel Beceri', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '3b214c0e-8cc5-447d-9664-d7a93ef653a4', '2025 Matematik', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Matematik');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '1632335e-72d5-477e-8157-e17717d7d49a', '2023 Coğrafya', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Coğrafya');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '711eeffa-4498-4e9e-a3ab-88d5c6fa2f2b', '2023 4 Temel Beceri ve Alan Eğitimi (TÜRKÇE A)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 4 Temel Beceri ve Alan Eğitimi (TÜRKÇE A)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '9a88d871-aa69-4ea4-bf5b-7915cea0dcc0', '2025 Tarih', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Tarih');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'b475b8a4-738c-4bb7-9105-31afc40a0945', '2024 Ölçme ve Değerlendirme', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Ölçme ve Değerlendirme');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'a4e94d21-8f69-4fa2-951e-4118cbee02b5', 'Çocuk Edebiyatı (GELENEKSEL 750 SORU KAMPI)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Çocuk Edebiyatı (GELENEKSEL 750 SORU KAMPI)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '5cb51f7b-43bb-4872-8cde-e9f027851711', '2026 NOKTA ATIŞI Yeni Türk Edebiyatı ve Dil Bilgisi - Harun DİNÇOĞLU', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Yeni Türk Edebiyatı ve Dil Bilgisi - Harun DİNÇOĞLU');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '40ee4fdd-380f-4320-a4e8-de37e0290e4c', 'Yelda Ünal - Eski Türk Dili 2 (Metin Çözümlemeleri)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Yelda Ünal - Eski Türk Dili 2 (Metin Çözümlemeleri)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '2f1bd9fd-087f-4487-a831-940e3024859e', '2026 AGS KAMP Tarih', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 AGS KAMP Tarih');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '1ece619f-3f8e-408e-913e-79b2e7d647fd', '2025 NOKTA ATIŞI KAMPI - HALK EDEBİYATI', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '0aeaa097-df96-4b04-bbdc-62a454cc128f', '2025 NOKTA ATIŞI KAMPI - HALK EDEBİYATI', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - HALK EDEBİYATI');
 
 INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '9c8c3275-3d95-43a1-8e4c-4e3e9dde1b19', '850 Soru Çözüm Kampı - Yeni Türk Edebiyatı - Harun Dinçoğlu', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Yeni Türk Edebiyatı - Harun Dinçoğlu');
+SELECT 'b1955d26-a011-4144-9448-7e44441dda51', '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.');
 
 INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'db84d6fa-c519-42fa-9d58-4aa47c5d18b8', '2024 Halk Edebiyatı (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Halk Edebiyatı (TDE)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '781919dd-47eb-4214-9926-98f2d8d524f0', '2025 Coğrafya', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Coğrafya');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '7e684932-d685-46a2-9d2e-6e8120fa44c6', '2025 SON BAKIŞ', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'ba232f2b-ca62-468b-9e4a-deb4dc1d4676', 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '139027a1-35c4-4df8-b134-3a722cdf43e0', '2026 AGS KAMP Anayasa ve Mevzuat', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 AGS KAMP Anayasa ve Mevzuat');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '8a5076ca-5bf6-43ec-a302-2e2eafe3e0cd', 'Gece Nöbeti - 2024 Türkçe Dersi Öğretim Programı (Maarif Modeli)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Gece Nöbeti - 2024 Türkçe Dersi Öğretim Programı (Maarif Modeli)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'b678ea76-f172-4ed0-ad71-7ca33f1bd2ee', '2026 NOKTA ATIŞI Dil Bilim - Onur UYSAL', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dil Bilim - Onur UYSAL');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'ad6516e8-154c-4554-9178-80ea16a0659d', '2024 KAMP Öğrenme Psikolojisi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 KAMP Öğrenme Psikolojisi');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'c7158140-ec9b-4e2d-9ee8-aa6ce06ab947', 'Dil Bilgisi - Yeni Türk Edebiyatı (Nokta Atışı)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Dil Bilgisi - Yeni Türk Edebiyatı (Nokta Atışı)');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '37c6e0b1-f6d4-41ff-9964-da1c1e467cb3', '2024 TDE TOPLANTI', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 TDE TOPLANTI');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '2734a607-432f-4a4e-873f-5813916bd834', '2024 EDEBİYAT ALAN EĞİTİMİ', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 EDEBİYAT ALAN EĞİTİMİ');
-
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '39ec111e-5578-4d90-8751-6fdc06761b21', '2023 Halk Edebiyatı (TÜRKÇE A)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'e187a1c6-1c02-4007-9274-38505179523a', '2023 Halk Edebiyatı (TÜRKÇE A)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Halk Edebiyatı (TÜRKÇE A)');
 
 INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT '69b8fe92-a153-4702-8bbd-4cb4fe3fc17d', 'TEST SINIFI', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '7f5e723c-94e8-4efc-8a6b-5837dd29b974', '2023 Vatandaşlık', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Vatandaşlık');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'debc56db-67ae-4f15-9f39-130ff9411842', '2025 Dil Bilgisi (Yeni Türk Dili)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Dil Bilgisi (Yeni Türk Dili)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '31712997-66fa-410e-b7b7-28aa84f89fbc', '2025 Dil Bilimi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Dil Bilimi');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '1d87390b-67a3-49db-bb40-d191b73fc659', 'AGS Anayasa ve Mevzuat KAMPI', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'dec16ef4-a4c7-4d9e-bda1-26ab715f7119', '2026 Eski Türk Edebiyatı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'ef00671b-0b77-4fa8-ae25-83bfce1d0658', '2026 AGS Türkçe ve Sözel Mantık', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 AGS Türkçe ve Sözel Mantık');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '614ca218-ecaa-4122-b167-ef307dd0bf7e', '2025 Anayasa ve Mevzuat', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Anayasa ve Mevzuat');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '3f04b0d0-c2b4-4ddf-b49d-6aee6301d19d', '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '9933a380-f747-4ad6-883e-728ea70c58f6', '2026 AGS KAMP Coğrafya', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 AGS KAMP Coğrafya');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '42c7d680-5617-4082-8e88-1ff355e82929', '2024 Öğrenme Psikolojisi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Öğrenme Psikolojisi');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'a1d8bdd3-0d4c-4497-a4cd-bf9ac93badac', '2025 SON BAKIŞ', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '21311cec-6cfe-486e-9c8a-58f78bc57b5d', '2026 - 4 TEMEL BECERİ CEPTE KAMPI', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 - 4 TEMEL BECERİ CEPTE KAMPI');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'a2ffbbec-dc62-4441-9ed4-00d8790ead7b', '2023 Dünya Edebiyatı (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Dünya Edebiyatı (TDE)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '1b5bb17c-2a7a-4a38-98f8-a58eb05ff0ce', '2023 Edebiyat Alan Eğitimi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Edebiyat Alan Eğitimi');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'c26a5232-f645-4882-abc2-42107863bedc', '2025 Eski Türk Edebiyatı - Murat Aytekin', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - Murat Aytekin');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'd5f83a88-e8a5-4fce-a409-fba55ffc5f8e', '2026 Dil Bilgisi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Dil Bilgisi');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '2a60ff63-7fd2-40d1-8501-fed4ccdf6432', '2026 AGS KAMP Matematik', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 AGS KAMP Matematik');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '8115f426-e4ea-4ce1-b77d-868d9036011e', '2025 Geleneksel Soru Çözümü Kampı - Murat Aytekin - Eski Türk Edebiyatı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözümü Kampı - Murat Aytekin - Eski Türk Edebiyatı');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'e6015dc6-2077-4fb1-8737-55c480223bae', 'YELDA HOCA 2026', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'YELDA HOCA 2026');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'e726499b-646f-4fc3-b3da-a67f844886f8', 'AGS Coğrafya KAMPI', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'AGS Coğrafya KAMPI');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'b0aef43e-2a63-4d7d-98d3-0fd585c595e4', '2025 Toplumsal - Ekonomik - Tarihsel Temeller', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Toplumsal - Ekonomik - Tarihsel Temeller');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '2f433128-5872-4e16-b7e5-73773d337d10', '2026 Coğrafya', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Coğrafya');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'd5cc9917-a42f-4f78-953d-550e26759e3d', '2024 ÖYT', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 ÖYT');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'febf3791-f3de-4895-843d-8cd9bbe2f9c1', '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'edd4995a-054b-49eb-a190-f9c9a76b1014', 'Dil Bilimi (GELENEKSEL 750 SORU KAMPI)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Dil Bilimi (GELENEKSEL 750 SORU KAMPI)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'c05c0550-364f-4b7a-8450-1c18478ba030', '2024 Eski Türk Dili (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Eski Türk Dili (TDE)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '5ae79277-5843-4d31-804b-b7b9464f404a', '2026 Eski Türk Edebiyatı - Murat Hoca', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı - Murat Hoca');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '1fa9bec1-1451-4a77-99cc-f7418678c179', 'Dil Bilimi YELDA ÜNAL', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Dil Bilimi YELDA ÜNAL');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'e515fb7a-c770-4d17-8be5-0855e96987b0', '2025 Türk Milli Eğitim Sistemi ve Yapısı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Türk Milli Eğitim Sistemi ve Yapısı');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'fcf6ee38-3f08-4e57-9d10-22846bac1c5c', 'Motivasyon 2024', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Motivasyon 2024');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '419ef629-59c8-43f0-b01e-e30262ccb5b0', 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '9b5e4713-c7f9-4dfb-910a-426f08a84a8b', '2023 Yabancılara Türkçe Öğretimi (TÜRKÇE A)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Yabancılara Türkçe Öğretimi (TÜRKÇE A)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '9f8ed770-179e-4cbc-be91-26d7625fa16a', '2026 4 Temel Beceri', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 4 Temel Beceri');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '07e57090-5c73-4afc-8896-11be1b050537', 'Yelda Ünal - Eski Türk Dili 1 (Konu Anlatımı)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Yelda Ünal - Eski Türk Dili 1 (Konu Anlatımı)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '1a6bd2c4-fc26-4690-8e6c-a6bedfb5db91', '2023 Çocuk Edebiyatı (TÜRKÇE A)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Çocuk Edebiyatı (TÜRKÇE A)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '3e9be867-6007-4718-bde9-6bb1e5feb370', 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '82ee379f-d7bd-42ba-ae41-b99a0290c059', '2024 Halk Edebiyatı (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Halk Edebiyatı (TDE)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '189a6426-c8a2-4d4a-b7ef-940353e2bcf3', 'Yeni Türk Çıkmış Soru Çözümü', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Yeni Türk Çıkmış Soru Çözümü');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '400e7861-e968-4b83-bbb7-15c73ad5552f', '850 Soru Çözüm Kampı - 4 Temel Beceri - Zuhal Bedirhan Evliyaoğlu', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - 4 Temel Beceri - Zuhal Bedirhan Evliyaoğlu');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '42e219d4-35fa-421a-b038-f88a5532998c', '2024 Alan Eğitimi (Türkçe)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Alan Eğitimi (Türkçe)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '53e5cc67-e8c8-4e6d-b03a-6408f3524aec', '2026 AGS KAMP ZUHAL HOCA', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 AGS KAMP ZUHAL HOCA');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '08f17da6-1115-44b4-9564-3afd35467123', '2025 Geleneksel Soru Çözüm Kampı Soner Özkan - Dil Bilimi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Soner Özkan - Dil Bilimi');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '1d30e63b-0a65-4cc6-8e55-0a70df04d247', '2026 Tarih', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Tarih');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'ff2e835a-dcd8-4390-9458-062faef12916', '2023 Ölçme ve Değerlendirme', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Ölçme ve Değerlendirme');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'e0b84aed-19ef-497b-beef-325e14fc4333', '2026 NOKTA ATIŞI Eski Türk Edebiyatı - İlker HAYAT', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Eski Türk Edebiyatı - İlker HAYAT');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '2ea1c07f-4c0a-4634-8061-60a647456979', '2024 Türkçe', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Türkçe');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '3c5a30df-8fa6-4360-a79d-f5b88efa59b8', '2024 Eski Türk Edebiyatı (Türkçe)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (Türkçe)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '5f27cfe4-43f9-498d-8fdc-e34e4efdab23', '2026 Matematik', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Matematik');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'de4b35fa-9550-42d1-87ee-debbe390a0b4', '850 Soru Çözüm Kampı - Dil Bilgisi - Harun Dinçoğlu', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilgisi - Harun Dinçoğlu');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'c2abcea8-0568-48ee-8dbb-f38027e21273', '2024 Dil Bilgisi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Dil Bilgisi');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '85c6af57-ff20-41ea-a62d-44685aeb1521', '2024 KAMP Vatandaşlık', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 KAMP Vatandaşlık');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '9b3e501b-2062-410d-83a8-d866ebab4229', 'Çocuk Edebiyatı (GELENEKSEL 750 SORU KAMPI)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Çocuk Edebiyatı (GELENEKSEL 750 SORU KAMPI)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '9f05adeb-f021-4f4f-b9ae-2b31fd1abd52', 'Yelda Ünal - Eski Türk Dili 2 (Metin Çözümlemeleri)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Yelda Ünal - Eski Türk Dili 2 (Metin Çözümlemeleri)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '9bbf639f-84a3-45d6-892e-c7b947d0d30a', 'AGS 1 Kampı (Eğitim Bilimleri İçeriği)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'AGS 1 Kampı (Eğitim Bilimleri İçeriği)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '6115356d-d68f-4ee9-9713-3a02597d41db', '2025 Felsefi Temel', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Felsefi Temel');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '9c25768f-c90c-4eda-926d-7594a3997173', 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'ce0c0cdc-51f6-4142-88ad-7b378bfcc5d1', '2026 NOKTA ATIŞI Dört Temel Beceri - ZUHAL EVLİYAOĞLU', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dört Temel Beceri - ZUHAL EVLİYAOĞLU');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '49b24315-ee37-4c0f-bfc0-ffc84336fa0d', '2025 4 Temel Beceri Soru Çözümü', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri Soru Çözümü');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '2b2cea00-e2b5-4d44-9591-66ff25672e0a', '2023 Halk Edebiyatı (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Halk Edebiyatı (TDE)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'fea51c4d-78c1-48d4-901d-0ef6faa5f102', 'Dil Bilimi (Nokta Atışı)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Dil Bilimi (Nokta Atışı)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '06108b27-71c0-4085-990c-7461ac2dffd5', '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Eski Türk Dili', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Eski Türk Dili');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '38e3d1d4-06f6-4d41-a798-1e358256a036', '2025 Geleneksel Soru Çözüm Kampı Gizem Ural - Çocuk Edb.', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Gizem Ural - Çocuk Edb.');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'cc6b48db-033c-45e8-ab16-c3eaef0d5ac3', '2026 Yeni Türk Edebiyatı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Yeni Türk Edebiyatı');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'bd38c938-bdb1-4363-89b9-6f778eb84047', '2024 KAMP Rehberlik', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 KAMP Rehberlik');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'a3d8a26f-1eda-4209-bdc2-5038ad8782b3', '2025 4 Temel Beceri', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'ff9254b0-a4c0-4f4d-8ace-2708fb4048d6', 'AGS Türkçe KAMPI', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'AGS Türkçe KAMPI');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'a3a63563-62a0-49d7-b711-5d168dbcc2eb', '2026 Çocuk Edebiyatı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Çocuk Edebiyatı');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '3aee735d-34ae-430e-aba0-76d9d060748b', '2026 AGS KAMP Tarih', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 AGS KAMP Tarih');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '75f9d5cc-a379-41b4-b08d-bbce740faa74', 'Eski Türk Edebiyatı (Nokta Atışı)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (Nokta Atışı)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '9a5ec22c-4ecc-4f03-a118-2ee876bfa33b', '850 Soru Çözüm Kampı - Halk Edebiyatı - Bülent Hoca', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Halk Edebiyatı - Bülent Hoca');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '8e3bb70c-3c8e-460a-9633-1942df394092', 'Edebiyat Bilgi Teorileri ve Dünya Edebiyatı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Dünya Edebiyatı');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '7a02b4ff-a5eb-4034-a8a4-aa3171c4e161', '2024 4 Temel Beceri (Türkçe)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 4 Temel Beceri (Türkçe)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '918ac967-2799-4d22-a3c1-a8800f31b922', '2026 Anayasa ve Mevzuat', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Anayasa ve Mevzuat');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'b0f7bc78-bb97-43ec-9aa5-2acc36b08dbc', '2025 NOKTA ATIŞI KAMPI - YENİ TÜRK EDB ve DİL BİLGİSİ', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - YENİ TÜRK EDB ve DİL BİLGİSİ');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'fab25712-5a68-4717-9206-a6c87c7a6f17', '2023 Gelişim Psikolojisi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Gelişim Psikolojisi');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'b2733528-4a8f-40c5-a842-fcfef78f76ee', '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '9b1af601-bce6-4816-ad99-58c53535976f', '2025 Halk Edebiyatı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '75cef278-dc16-48db-bb42-4fb677b084f6', '2024 Dil Bilimi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Dil Bilimi');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'e3cefdd4-961c-4a49-89b6-68393bb5007f', '2025 Coğrafya', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Coğrafya');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '76bdbff9-9cb1-4058-8a3e-af9f16ccc147', '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '247c0e98-dc5d-40f6-9e30-0810d3e6b752', '2025 NOKTA ATIŞI KAMPI - EDEBİYAT BİLG TEO ve DÜNYA EDB', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - EDEBİYAT BİLG TEO ve DÜNYA EDB');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '6a1bcdc9-b2ab-4b24-ab8e-3f7ed47683aa', '2025 - 4 Temel Beceri Cepte Kampı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 - 4 Temel Beceri Cepte Kampı');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '5136d128-d8d9-4f79-8444-577432299937', '2024 Rehberlik', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Rehberlik');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '63165ef9-804b-4bb2-acb9-7395bc466154', '2024 Vatandaşlık', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Vatandaşlık');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'c50fc93c-ecaa-4274-8c56-2f0e7685eba0', '2024 KAMP Gelişim Psikolojisi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 KAMP Gelişim Psikolojisi');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '46767382-30ea-468d-8295-878b6d7dfa70', 'Deneme Dersi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Deneme Dersi');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'af262e37-e916-420b-8155-915cce2fbc3f', '2024 Ölçme ve Değerlendirme', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Ölçme ve Değerlendirme');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'a31bd267-2769-4935-81cb-d149e7f3c6a0', '2026 Rehberlik ve Motivasyon', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Rehberlik ve Motivasyon');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'fa605e3f-6156-4321-84aa-694c3b76f8b7', '2023 Yeni Türk Edebiyatı (TÜRKÇE A)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Yeni Türk Edebiyatı (TÜRKÇE A)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'b47906f5-2be1-4041-ac38-cbc2a00aeb37', '2023 Tarih', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Tarih');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'e6c1640d-9d4a-4472-a882-d87756fa276a', 'SON BAKIŞ', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'SON BAKIŞ');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '144807f5-450f-4a45-8abc-6f5a00f09e25', '2024 Matematik', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Matematik');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '93abe8ba-759f-441f-95b8-9eed8e01085a', '2023 Dünya Edebiyatı (TÜRKÇE A)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Dünya Edebiyatı (TÜRKÇE A)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '83264cdd-9239-457a-a880-b33eaae1b525', 'Gece Nöbeti - Beyit Şerhi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Gece Nöbeti - Beyit Şerhi');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '8202135f-dcf7-4a35-a6a5-9d779127eaf9', '850 Soru Çözüm Kampı - Dil Bilimi - Soner Hoca', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilimi - Soner Hoca');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '8020de4c-95d8-447d-8739-9f75ab7e6ec6', '2026 AGS KAMP ERDAL HOCA', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 AGS KAMP ERDAL HOCA');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '6d217884-c502-46c5-838f-d3ad7b9c8b2d', '2023 Matematik', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Matematik');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '94befc97-8a1b-473b-9225-2992f2a40422', 'Gece Nöbeti - 2024 Türkçe Dersi Öğretim Programı (Maarif Modeli)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Gece Nöbeti - 2024 Türkçe Dersi Öğretim Programı (Maarif Modeli)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '8eb91769-d3ed-43f5-8822-11a189cdbf1f', '2025 NOKTA ATIŞI KAMPI - 4 TEMEL BECERİ', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - 4 TEMEL BECERİ');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'f09c8d2d-f11a-491e-86bb-d9189e64cb0e', '2024 EDEBİYAT ALAN EĞİTİMİ', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 EDEBİYAT ALAN EĞİTİMİ');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'fb4cb125-fd6a-4a59-91dd-6b6afef6247d', '2026 Batı Edebiyatı ve Teoriler', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Batı Edebiyatı ve Teoriler');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'd67526e3-7e2e-45c2-aba8-2eee5cd5ec31', '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '42742140-5ffd-4108-aa2c-ea2231f1707f', '2024 Yeni Türk Edebiyatı (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Yeni Türk Edebiyatı (TDE)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'cb722e53-caaf-45b7-9c83-e62bbe8e5453', 'Halk Edebiyatı - Çocuk Edebiyatı (Nokta Atışı)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Halk Edebiyatı - Çocuk Edebiyatı (Nokta Atışı)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '0595d68f-ff50-407b-bfaa-4bff7064b845', '850 Soru Çözüm Kampı - Dünya Edebiyatı - Edebiyat Bilg. Teo . - Fatih Mehmet Muş', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dünya Edebiyatı - Edebiyat Bilg. Teo . - Fatih Mehmet Muş');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '177ab02b-d968-4deb-9f3d-1fac72d92680', '2023 ÖYT', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 ÖYT');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '13804bd7-0524-4897-8b90-ece0b449db05', '2024 KAMP ÖYT PG', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 KAMP ÖYT PG');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'a479636c-3a8c-4b36-95bc-c84958fcf5ab', 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'd0de8187-9620-4878-81d0-0942b896db56', '2026 Dil Bilimi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Dil Bilimi');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '82ae18bf-5776-4151-8369-e7c25c22a9d3', '2025 Matematik', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Matematik');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '7e951cbe-760c-4a60-981d-445a6458b438', '2026 Gelişim Psikolojisi - Öğrenme Psikolojisi - Rehberlik', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Gelişim Psikolojisi - Öğrenme Psikolojisi - Rehberlik');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '0a4b2f2f-ff45-49d3-995d-d83cba5945db', '2026 NOKTA ATIŞI Dünya Edebiyatı ve Teorileri - Fatih Mehmet MUŞ', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dünya Edebiyatı ve Teorileri - Fatih Mehmet MUŞ');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '78b3c09b-eac3-4c78-a25f-845e54548626', '2025 Eski Türk Edebiyatı - İlker Hayat', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - İlker Hayat');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'a8be32b8-8b0b-4a5b-a0fe-196b1f132b13', '2025 NOKTA ATIŞI KAMPI - DİL BİLİMİ', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - DİL BİLİMİ');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '7403c9ed-d304-4a9b-bd7c-efee53f0c0a3', 'AGS Matematik KAMPI', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'AGS Matematik KAMPI');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '52cdace2-11bc-4f7f-8e74-c60a13ea276b', 'Dil Bilgisi (Yelda Ünal)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Dil Bilgisi (Yelda Ünal)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '7d5b715d-f245-41ae-be0a-8bd7ef4fe6e8', '2024 TDE TOPLANTI', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 TDE TOPLANTI');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '24a6043c-1c8a-4b0e-9206-4f0411c00256', '2025 NOKTA ATIŞI KAMPI - ESKİ TÜRK EDEBİYATI', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - ESKİ TÜRK EDEBİYATI');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'cd331fea-65a6-4baf-ac66-59af020b0359', '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - Murat Hoca', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - Murat Hoca');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'a56eca8d-77dd-4341-9a3d-e8088d4e843c', '2025 Halk Edebiyatı (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı (TDE)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '7908ab15-1779-4fb8-a269-c6c3babd5f36', 'Dil Bilimi 1', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Dil Bilimi 1');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'a83925a1-dc0a-477e-b20a-ecfd4253308c', 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'a3955472-c81d-4496-820c-69237c5c6bfb', 'Edebiyat Bilgi Teorileri ve Batı Edebiyatı (Akımlar - Sanatçılar) (Nokta Atışı)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Batı Edebiyatı (Akımlar - Sanatçılar) (Nokta Atışı)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '8d566248-7bf3-4bc5-a517-a2c6635fe490', '2023 Eski Türk Edebiyatı (TÜRKÇE A)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Eski Türk Edebiyatı (TÜRKÇE A)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'f084b04d-4cd9-48e2-954a-8a5b7da31773', '2023 Eski Türk Edebiyatı (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Eski Türk Edebiyatı (TDE)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '1f174232-68c9-454c-94fd-c823fc63443b', '2026 NOKTA ATIŞI Yeni Türk Edebiyatı ve Dil Bilgisi - Harun DİNÇOĞLU', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Yeni Türk Edebiyatı ve Dil Bilgisi - Harun DİNÇOĞLU');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '8c09aafd-5c4d-4d3b-9363-ff7789fdf943', 'Edebiyat Alan Eğitimi(Geleneksel 750 Soru Kampı)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Edebiyat Alan Eğitimi(Geleneksel 750 Soru Kampı)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'ad2bb068-3fab-448d-85ed-f1dcd976a6c8', '2025 Yeni Türk Edebiyatı (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı (TDE)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '7a9a3c5a-8e52-48e1-8cd9-9c7270af5b62', '2024 Halk Edebiyatı (Türkçe)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Halk Edebiyatı (Türkçe)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'fdb1138d-9e6f-475d-a487-f8f3da03b9b2', '2025 Çocuk Edebiyatı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Çocuk Edebiyatı');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '7dd28d2e-6fc1-45a4-8d03-8e36fdd0a39e', '2025 Yeni Türk Edebiyatı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '4607d99d-1979-4a50-8f73-b55eb819719f', '2023 Yeni Türk Edebiyatı (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Yeni Türk Edebiyatı (TDE)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'ab7423d2-aa09-4d70-8b1c-5504d4cb2cc9', '2024 KAMP Türkçe', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 KAMP Türkçe');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '1108591a-5893-4a10-b9ae-a7b9496be208', '15 BİN ATAMA MÜLAKAT SÜRECİ', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '15 BİN ATAMA MÜLAKAT SÜRECİ');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '1814aabc-48de-4597-9665-bd9da123e817', '2024 Coğrafya', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Coğrafya');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'c3185d13-d099-40c5-8bad-92101da4db47', '2024 Program Geliştirme - Sınıf Yönetimi - Materyal', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Program Geliştirme - Sınıf Yönetimi - Materyal');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '34c11dd3-d029-44bb-bff5-72cfac79ae2a', '2025 Türkçe ve Sözel Mantık', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Türkçe ve Sözel Mantık');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '1be0c8fc-ba96-4fd9-874c-bebbdb15253a', '2025 Tarih', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Tarih');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '281eec82-22ce-4b5b-99bc-a10da2942a10', '2026 Halk Edebiyatı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Halk Edebiyatı');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'da4e30ea-152d-43df-acd0-567459020a85', '2023 Öğrenme Psikolojisi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Öğrenme Psikolojisi');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '2611abbc-fd7e-479f-88f8-3566621dc7e2', '2026 NOKTA ATIŞI Türk Halk Edebiyatı - Bülent DEMİR', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Türk Halk Edebiyatı - Bülent DEMİR');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '76947f06-5026-471f-93c4-028663c68372', '2026 - Dünya Edebiyatı Tekrar (Harun Dinçoğlu)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 - Dünya Edebiyatı Tekrar (Harun Dinçoğlu)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '00e604e6-1b85-4b55-a5be-fd60a6695d55', '2023 Program Geliştirme - Sınıf Yönetimi - Materyal', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Program Geliştirme - Sınıf Yönetimi - Materyal');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'b6920e02-16e7-47ad-a262-e02fdc9a0601', '850 Soru Çözüm Kampı - Yeni Türk Edebiyatı - Harun Dinçoğlu', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Yeni Türk Edebiyatı - Harun Dinçoğlu');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '1aa5b662-4352-4d4f-b9a0-a344ef897e63', '2023 Coğrafya', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Coğrafya');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '3d8d8d70-d55e-422a-ac6b-2c25d7a025b6', 'Dil aileleri', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Dil aileleri');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'c729f9c7-7af0-4305-b547-73514c612604', '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - İlker Hayat', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - İlker Hayat');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'c776bd47-1bd1-4055-86ad-220ef2eb0b79', '2024 Eski Türk Edebiyatı (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (TDE)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '9f74c4ce-9c26-45f6-887d-5329df7b5a09', 'Dil Bilimi Soru Analizi - Umut Hoca', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Dil Bilimi Soru Analizi - Umut Hoca');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '7c9f223d-995d-4782-818c-8b840716a91a', '2025 Eski Türk Dili (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Eski Türk Dili (TDE)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '38a829d2-1357-4f82-816f-9d053f039aaf', '850 Soru Çözüm Kampı - Dil Bilimi - Emir Hoca', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilimi - Emir Hoca');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'a24a94ba-f029-4d2f-aca1-9540f04d8d66', 'KPSS KORK BİZDEN GELİYORUZ', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'KPSS KORK BİZDEN GELİYORUZ');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '61244833-47d5-4232-b89e-ce3244a6c070', '2026 AGS KAMP Türkçe ve Sözel Mantık', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 AGS KAMP Türkçe ve Sözel Mantık');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'cfae24ec-9781-444c-b940-c97e677bb970', '2025 NOKTA ATIŞI KAMPI - ÇOCUK EDEBİYATI', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - ÇOCUK EDEBİYATI');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'e841a4ca-f309-4ae3-8727-26175aad59ff', '2025 Kuramlar - Modeller ve İlkeler', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Kuramlar - Modeller ve İlkeler');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '6d10ef7c-42b3-43b3-bd91-2141401348e9', 'Gece Nöbeti - Dil Bilgisi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Gece Nöbeti - Dil Bilgisi');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '44cf3b9a-916a-42e7-8e3d-d880c333c3b8', '2025 Maarif Modeli', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Maarif Modeli');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '7adc217d-bb00-4920-a9c9-a10e25672d09', '2026 NOKTA ATIŞI Dil Bilim - Onur UYSAL', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dil Bilim - Onur UYSAL');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '48c3fd16-c3a9-4ecb-b1be-20933095652f', '2024 Yeni Türk Edebiyatı (Türkçe)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Yeni Türk Edebiyatı (Türkçe)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'a8d611e2-596d-41b2-8f15-e5d03254eef3', '2023 4 Temel Beceri ve Alan Eğitimi (TÜRKÇE A)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 4 Temel Beceri ve Alan Eğitimi (TÜRKÇE A)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '2fbfe5fe-5fe0-473c-9eea-dce0ef16d78f', '2024 KAMP Coğrafya', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 KAMP Coğrafya');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '852af0dc-5996-410f-aece-cf13323fc017', 'Dil Bilgisi - Yeni Türk Edebiyatı (Nokta Atışı)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'Dil Bilgisi - Yeni Türk Edebiyatı (Nokta Atışı)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '8edc679e-cab5-4794-b615-d5735e56e25d', '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '4ad57a38-7328-470a-bb95-298552ff016e', '2024-2025 Planlama', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024-2025 Planlama');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '44c122dc-5e06-47bf-b4cc-42182f4c14c0', '2025 Psikolojik Temel', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Psikolojik Temel');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '243c8779-13d9-4c64-96f3-b0c75dbf0a3a', '2026 Eğitimin Temel Kavramları - Felsefi Temel - ÖYT - Materyal - Sınıf Yönetimi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Eğitimin Temel Kavramları - Felsefi Temel - ÖYT - Materyal - Sınıf Yönetimi');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '7b734e53-c4e2-43e2-b989-a2dca6c0d08b', '2025 Eğitim Teknolojileri', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Eğitim Teknolojileri');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '31e6e499-4759-4c26-92b6-9c5551f47397', '2025 - BEYİT ŞERHİ', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'f17c15a7-9a8a-41ac-89a9-c3cd0781e9ab', '2025 Rehberlik Ve Motivasyon', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'db4bf1cc-e260-4e86-b414-9d7099c636e4', '2025 Eski Türk Edebiyatı (TDE)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı (TDE)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'eb50a810-e06b-449d-b638-c0ce38fb1bb2', '2026 Kazanım İncelemeleri', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Kazanım İncelemeleri');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '5f2f0a29-1078-4bc6-9fc7-6db50060e87c', '2024 Çocuk Edebiyatı', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Çocuk Edebiyatı');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '247d4071-12d0-496e-9cac-94e3bb0917c8', '2023 Rehberlik ve Özel Eğitim', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Rehberlik ve Özel Eğitim');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'c7339e8a-1314-4275-891b-b26dac007094', '2026 NOKTA ATIŞI Çocuk Edebiyatı - Gizem URAL', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Çocuk Edebiyatı - Gizem URAL');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '067fefd9-2453-4a04-89df-78c586c6d117', '2025 Öğretmenlik Mesleğinde Etik', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Öğretmenlik Mesleğinde Etik');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '607aca2e-9101-4e79-97d1-e1719d0d8700', '2024 Tarih', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Tarih');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '1c94cab7-aa42-41a8-971a-3e087184c446', '2026 AGS KAMP FATMA HOCA', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 AGS KAMP FATMA HOCA');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'e27c6d4a-3056-4ab1-8008-25510d948735', '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'c000bbad-e782-454e-bb40-020cf05a3501', '2024 Yabancılara Türkçe Öğretimi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 Yabancılara Türkçe Öğretimi');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '7ad088c6-7698-471f-802c-021e4458ea75', '2024 KAMP Tarih', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 KAMP Tarih');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '1999af9e-f4d5-4c98-b3e8-9d9dbfe452ab', '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (GELENEKSEL 750 SORU KAMPI)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (GELENEKSEL 750 SORU KAMPI)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '7cad8eb2-612b-4f9e-9da7-738e6022af64', 'TEST SINIFI', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'TEST SINIFI');
 
 INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
-SELECT 'a1ab3a52-54bb-44c9-9e5e-5b39d0dee7a3', '2023 Dil Bilgisi (HARUN DİNÇOĞLU)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'dc8d4893-a488-4ab7-86e0-0e8d23cdaa45', '2026 AGS KAMP Anayasa ve Mevzuat', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 AGS KAMP Anayasa ve Mevzuat');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'e001027f-3443-4eae-a8c6-6d48eef1bcc2', '2023 Edebiyat Bilgi ve Teorileri (TÜRKÇE A)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Edebiyat Bilgi ve Teorileri (TÜRKÇE A)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'c0a72446-6a5e-4136-b3c9-b924743a4e5f', '2023 Türkçe ve Sözel Mantık', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Türkçe ve Sözel Mantık');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'd03ffe07-1833-4b1d-a2ba-a704ce8a89a4', '2025 Geleneksel Soru Çözüm Kampı Zuhal Evliyaoğlu - 4 Temel Dil Becerisi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Zuhal Evliyaoğlu - 4 Temel Dil Becerisi');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'bd5ce448-e9ef-47ac-8256-0a5ea4f10c48', 'AGS Tarih KAMPI', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = 'AGS Tarih KAMPI');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '01117de2-faac-4f9e-8c18-2afc9ab2f937', '2026 Maarif Modeli - Program okuryazarlığı ve Temeller- Ölçme', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 Maarif Modeli - Program okuryazarlığı ve Temeller- Ölçme');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'e31676f6-a71e-4f4c-9339-bbaae089f72d', '2026 - Dil Bilimi Tekrar (Emir Hoca)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2026 - Dil Bilimi Tekrar (Emir Hoca)');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT '856e68c6-f91e-437a-982b-ed1e378b4b87', '2024 KAMP Öğrenme Psikolojisi', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2024 KAMP Öğrenme Psikolojisi');
+
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'f608c99a-f411-4af3-b2fc-9a3891ac565c', '2023 Dil Bilgisi (HARUN DİNÇOĞLU)', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2023 Dil Bilgisi (HARUN DİNÇOĞLU)');
 
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
+SELECT 'd3d7baa4-5c1e-4fa2-bd44-4c2b79ccfe9e', '2025 Eğitimin Temel Kavramları', '', true, CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
+WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '2025 Eğitimin Temel Kavramları');
+
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '238e1b32-48e2-4513-aa84-ded6b9aa092f', '2024 GRUPLAR', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '725ae959-ad5f-4371-ba90-b329d78534fe', '2024 GRUPLAR', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2024 GRUPLAR');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'b2cdd0fc-0527-442e-b531-3b8840574095', 'CANLI', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'bf04a371-185b-4579-a16b-c49feb778f66', 'CANLI', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'CANLI');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'c56ab937-6da2-47ff-acd3-520ada2d21c9', '2024 GKGY', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '1d4c047c-dae3-40ab-a04a-7120d47a7623', '2024 GKGY', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2024 GKGY');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'c2ace5a1-4318-462e-b076-c7e779f41ca4', '2024 Eğitim Bilimleri', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '0f193420-2b79-46a4-930b-195715045c4b', '2024 Eğitim Bilimleri', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'fc2d4565-6261-40cb-8c1a-38a9c6afe4f0', '2024 Türkçe ÖABT', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '02d5cdc5-8593-4d55-a6fd-6b6fe7898a47', '2024 Türkçe ÖABT', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'de83bda3-2c97-4062-9713-b1d75ff7cd1c', '2024 Edebiyat ÖABT', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '8703cfe9-f78b-4b04-9c84-5364a37ebf31', '2024 Edebiyat ÖABT', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '8e3ad66d-075e-46b3-8582-9951e7b28ab7', 'VİDEO', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '326a2617-1f5d-4715-ab66-19719ffba223', 'VİDEO', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'VİDEO');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '43947c97-50b4-4f40-9cdd-19371a74a6bb', '2024 GKGY Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'bf836c54-ff05-45d4-be5f-b56da1563f6f', '2024 GKGY Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2024 GKGY Video');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'e6785663-f9b6-4d06-b8a8-467895c5d38b', '2024 Eğitim Bilimleri Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '45bbdc6c-4b19-4097-b8d6-3b8ad527ff4d', '2024 Eğitim Bilimleri Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '63bd231d-fd52-4d8e-b0ca-9ea1a606cab0', '2024 Türkçe ÖABT Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '91fe160b-3914-408c-9ad6-8b5326280b4b', '2024 Türkçe ÖABT Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'e416455e-09be-4c37-ac06-e05af4627a16', '2024 Edebiyat ÖABT Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'c7beb337-5d02-4af2-bfd8-4aed284c781d', '2024 Edebiyat ÖABT Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '56d9d8cf-d26a-4ea8-85d0-33e2d4f2842a', '2024 KAMP', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '5312be54-ef83-4833-9667-f418fb7c719b', '2024 KAMP', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2024 KAMP');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '0c5b2371-a8cf-422c-8989-70aaece1c57f', '35 Soru Cepte', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '24e7c05a-24ce-466a-a908-c40ddfc748c9', '35 Soru Cepte', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '35 Soru Cepte');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '0d686e9c-945b-4920-bfb2-336bfc9d66ae', 'Geleneksel 750 Soru Çözüm(CANLI)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '7284a82f-b1bc-4704-9032-654537dc0450', 'Geleneksel 750 Soru Çözüm(CANLI)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'd98a5f22-b60d-4152-a04d-822f9c20bb89', 'Nokta Atışı Konu Tekrar(CANLI)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'b754f0c0-370d-4103-923e-9f65eb46214c', 'Nokta Atışı Konu Tekrar(CANLI)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '10f64419-1b78-486a-9dee-3ab1c6923b2e', 'Eğitim Bilimleri', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '53dc6edc-bf35-434c-8525-b830677bd6f4', 'Eğitim Bilimleri', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'Eğitim Bilimleri');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '0971de7e-d8d7-44cf-9d9e-304c8b133c19', 'GKGY', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'd8e69328-54fa-4744-a030-10a3082cece3', 'GKGY', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'GKGY');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'c4b214c9-da3e-4c68-ba97-191b914f2b28', 'TDE', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '178919d9-5291-485b-95ed-e6b4b1f1c89a', 'TDE', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'TDE');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '5f3acf80-e450-4344-965d-43750e368f6b', 'Geleneksel 750 Soru Çözüm(VİDEO)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '7cd4d646-5603-426f-8d65-e9b6ddc2d23c', 'Geleneksel 750 Soru Çözüm(VİDEO)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '96f8a34b-53ae-4654-a025-9524b53e4805', 'Nokta Atışı Konu Tekrar(VİDEO)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'f86294b5-ee6a-4810-acf1-8ba7209b4abd', 'Nokta Atışı Konu Tekrar(VİDEO)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '29a2d2c9-4f71-45ff-a1c6-1accf61940ae', '2024 Grup (2023 Dersleri)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '5a25bcf0-954e-4e2d-b73a-f814e5e3044b', '2024 Grup (2023 Dersleri)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2024 Grup (2023 Dersleri)');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'a884be62-36ba-45dd-8b61-bb110fa87d97', '2023 GKGY', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '1ad87b29-e975-48c7-b74f-f4c354413e56', '2023 GKGY', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2023 GKGY');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '943e2c9b-48eb-470f-bca3-e1beeacee969', '2023 Eğitim Bilimleri', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'aee0804f-d6a7-4429-8781-bdeb46ae42c1', '2023 Eğitim Bilimleri', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '67574490-3458-4854-9831-c8084f318465', '2023 Türkçe ÖABT', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '20dfbfd0-8252-469e-8f88-c446798c9a42', '2023 Türkçe ÖABT', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'b87d6a81-8615-4ea4-940e-053f6a97bab4', '2023 Edebiyat ÖABT', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '6fe356b2-6d33-430d-86af-a8c880e19960', '2023 Edebiyat ÖABT', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '3f809148-7ea7-4a58-b3a4-3a5fc8f370b7', '2025 Gruplar', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'eb72dbca-ba17-4673-8919-b78d8f53a59e', '2025 Gruplar', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2025 Gruplar');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '43f03e73-cddb-4882-907c-c2cb568a1789', '2025 Türkçe ÖABT', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '335501e2-c1a4-45aa-8d53-1ce272f91434', '2025 Türkçe ÖABT', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '927950a9-1a0f-409b-8ede-135a0761ad85', '2025 Edebiyat ÖABT', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '2a03bc2f-349a-4e7b-b542-3b348c9f3ee0', '2025 Edebiyat ÖABT', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '42ff1521-7d90-44d1-9772-91088242b33d', '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '7a139902-ea46-419f-a1ef-fbd9ffcf9865', '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '4a813659-6526-4ebf-8c83-ea2f7dd67490', '2025 AGS 2. PAKET (GKGY İçeriği) Canlı', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '0d3963d6-afe8-48ff-b0d9-98f728bf7f11', '2025 AGS 2. PAKET (GKGY İçeriği) Canlı', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '946a2508-4eb3-4baf-991d-ec81825b0abb', '2025 Türkçe ÖABT Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '45ab67ee-cf53-42c5-99b6-5c13c151b687', '2025 Türkçe ÖABT Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '29a70e36-3a01-46b8-bacf-d315e3ae457a', '2025 Edebiyat ÖABT Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '76310de6-f362-45f6-9518-cebca7b4bcb7', '2025 Edebiyat ÖABT Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '74e77c28-44e9-4d51-8d68-8722039e8efd', '2025 AGS 2. PAKET (GKGY İçeriği) Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'cd0c0ded-bae3-4f8d-957b-e59142315c1b', '2025 AGS 2. PAKET (GKGY İçeriği) Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '1cbbdc24-1a63-4dc7-9f5f-280fdc98bb2d', '2025 Grup(2024 Dersleri)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'aa92f39a-ddaa-4d73-97c2-1ef64bc550d0', '2025 Grup(2024 Dersleri)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2025 Grup(2024 Dersleri)');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '62d07907-b2f0-4cb7-a411-e6d86436e403', 'GKGY Önlisans', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '613b5f60-13c2-4c62-bfc5-01858a361419', 'GKGY Önlisans', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'GKGY Önlisans');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '07d09e53-c856-43cf-a86c-5f34f4e1fd40', '2025 KAMP', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '8a11401f-4d19-47f3-8dff-9afc50b42760', '2025 KAMP', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2025 KAMP');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'c5d8007e-6b65-4fa0-bf01-26313c57b1db', '4 Temel Beceri Cepte(CANLI)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'ee8b98e2-6971-4799-b0a8-54c5f755f002', '4 Temel Beceri Cepte(CANLI)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '4 Temel Beceri Cepte(CANLI)');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'c4ff16c8-67ea-4767-8e16-bef3a6cdc1bb', 'Nokta Atışı Konu Tekrarı(CANLI)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '7aff55a0-f2f0-491e-a586-31bd8bf73c13', 'Nokta Atışı Konu Tekrarı(CANLI)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'ac227272-f1b4-448c-bf95-9999eabe128e', 'AGS 1(Eğitim Bilimleri İçeriği)CANLI', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '8e5dba45-e802-4eed-af9f-ed40783da324', 'AGS 1(Eğitim Bilimleri İçeriği)CANLI', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'AGS 1(Eğitim Bilimleri İçeriği)CANLI');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '01dc53a1-e9f4-489e-bebc-69eb2b0219f1', 'AGS 2(GKGY İçeriği)CANLI', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'ea4bccac-24e7-470c-bbbf-641f3f023fe0', 'AGS 2(GKGY İçeriği)CANLI', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)CANLI');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'a5d6ce96-92b1-45e2-8b43-1c4ed863a9a8', '4 Temel Beceri Cepte(VİDEO)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '21856a2f-73fa-4255-87fb-819c535e1a1a', '4 Temel Beceri Cepte(VİDEO)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '4 Temel Beceri Cepte(VİDEO)');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '8805cb44-4c42-44c5-8c0e-7e67c75c9365', 'Nokta Atışı Konu Tekrarı(VİDEO)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '736752ad-c64f-4847-883c-a5f90a5dedf1', 'Nokta Atışı Konu Tekrarı(VİDEO)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '5935dbf0-f765-4661-8a9b-d93debc6c940', 'AGS 1(Eğitim Bilimleri İçeriği)VİDEO', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '0d53a2b9-3d19-48e1-abde-8830820ba9d1', 'AGS 1(Eğitim Bilimleri İçeriği)VİDEO', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'AGS 1(Eğitim Bilimleri İçeriği)VİDEO');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'f1e04622-71ba-44f1-906a-691d75211dde', 'AGS 2(GKGY İçeriği)VİDEO', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '641a7e68-4a2f-4754-a9b7-eabddb46c8e2', 'AGS 2(GKGY İçeriği)VİDEO', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)VİDEO');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '8bbd882c-4e25-4b97-8a79-b6ec0221d430', 'TDE (VİDEO)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '294c526d-afa3-45b6-8456-fc18510b2c33', 'TDE (VİDEO)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'TDE (VİDEO)');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'bc62df1e-f012-4d32-95b5-160dc3012341', 'Yeni Öğrenciler', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '41d63174-9769-4a58-acbf-861db4782b25', 'Yeni Öğrenciler', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'Yeni Öğrenciler');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '7557ac91-fcc2-461e-8fb5-9555f74c5bf8', '15 BİN ATAMA MÜLAKAT', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '3ebb98c2-f273-4d10-8bfd-3a616045df8e', '15 BİN ATAMA MÜLAKAT', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '15 BİN ATAMA MÜLAKAT');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'fa81c54b-24b0-4558-9715-36258c45a6d1', '2026 GRUPLAR', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'fef520d4-c469-4cbb-bb6d-68575f6fbac7', '2026 GRUPLAR', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2026 GRUPLAR');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '3f470bda-ed7f-43f5-aa48-0c525e98efe5', 'Türkçe ÖABT CANLI', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'b5a45bdd-fe46-4e7a-8f6a-4987255fefd1', 'Türkçe ÖABT CANLI', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '9aff7ddf-c015-405f-91a6-ab9f67f8cc10', 'Türkçe ÖABT VİDEO', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'd83aa455-63a1-4482-9ec6-755434389c2b', 'Türkçe ÖABT VİDEO', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '89fdccaf-4ecd-4964-960c-445de2dd6b04', '2026 Grup (2025 Dersleri)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '633ac4be-f0ba-4939-ab5b-7448f14cdf9a', '2026 Grup (2025 Dersleri)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2026 Grup (2025 Dersleri)');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '5d17eeed-8d3f-4f8b-802b-4ef285f5435a', 'Türkçe ÖABT(2025 Videolar)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '4cd4fde7-4704-482f-8ad6-fc09bdb35075', 'Türkçe ÖABT(2025 Videolar)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '227ef06a-b124-4248-b6ac-c4b9a72cef12', 'AGS(2025 Videolar)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'e0f90bac-819b-479a-a72c-4bb1ed44bf5b', 'AGS(2025 Videolar)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '5a5b8a20-d7c8-4177-b623-65199f016fc9', 'AGS CANLI', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'be6bbe89-1ad2-4357-8b4e-145f775f2dda', 'AGS CANLI', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'AGS CANLI');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'f8926156-552d-46a8-979c-5591845251be', 'AGS VİDEO', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '073120d0-ca8b-49df-8cac-d36266a077ff', 'AGS VİDEO', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'AGS VİDEO');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'bd2535ce-cc4b-4767-9182-50bef49a4aac', 'GECE NÖBETİ KAMPI', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'a80d0efb-4175-4d6f-925d-63e747f006a7', 'GECE NÖBETİ KAMPI', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'GECE NÖBETİ KAMPI');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '002ed809-4ee2-46d9-a0e0-1d23b3a301b3', 'GECE NÖBETİ CANLI', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'fab3cc86-c6ff-487b-be9b-f24b9338e7f0', 'GECE NÖBETİ CANLI', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'GECE NÖBETİ CANLI');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'b110d234-93b9-47cc-a7dc-f3f0fe89aba0', 'GECE NÖBETİ VİDEO', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '0366f1e2-79c6-475a-800a-0d372c816c62', 'GECE NÖBETİ VİDEO', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'GECE NÖBETİ VİDEO');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'ace89da8-1354-49c6-a631-4f0c04143b9a', '4 TEMEL BECERİ CEPTE KAMPI', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'dfd17a5b-e373-4c1d-824f-fb5ca675280a', '4 TEMEL BECERİ CEPTE KAMPI', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '4 TEMEL BECERİ CEPTE KAMPI');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'eb5d1b2b-0a87-454d-a59c-3b5916bfd5a7', '4 Beceri Cepte Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '86f00155-72be-4261-ac97-7d4e64421cce', '4 Beceri Cepte Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '4 Beceri Cepte Video');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '8648a722-8e21-4108-ae76-ab9e17af3cf8', '4 Beceri Cepte Canlı', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '183e32ea-0322-42b9-a26d-e47d0a898717', '4 Beceri Cepte Canlı', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '4 Beceri Cepte Canlı');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'aedbbda1-806c-4be6-bbe0-1ea0f9c201b5', '850 Soru Kampı', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '8062ae6d-64dc-46e7-92c5-0c05b487cf87', '850 Soru Kampı', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '850 Soru Kampı');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '62b521ed-4df5-496e-bb40-f438f8e1c561', '850 Soru Kampı Canlı', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'cc22ee08-bb60-49a1-a18d-27c2d78cebd1', '850 Soru Kampı Canlı', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '2074c89c-1704-4904-b9af-a2add1034076', '850 Soru Kampı Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'd172cd67-fa84-439b-b303-20f4cb49cc51', '850 Soru Kampı Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '850 Soru Kampı Video');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'c8550e75-ad76-4aa5-8c9c-f759aa0d8ddc', 'Nokta Atışı Kampı', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '5152302b-89bd-4808-b140-f2d944479901', 'Nokta Atışı Kampı', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'Nokta Atışı Kampı');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '38ce77aa-2128-4628-9558-b9bd6387ae19', 'Nokta Atışı Canlı', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '41da80c7-3e10-4f18-a853-9963be8fe7aa', 'Nokta Atışı Canlı', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '80bde104-0682-42b9-b7aa-48f98971adc9', 'Nokta Atışı Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '9bb8792f-7dfc-4dfd-bb97-b9fe1ed12513', 'Nokta Atışı Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'Nokta Atışı Video');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'bcc59c44-04db-48db-9fd3-a911a0988c56', 'AGS 1 KAMP', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'f5f2f316-c185-41df-b41d-5b7232903ae6', 'AGS 1 KAMP', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'AGS 1 KAMP');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '3c468b3e-5a73-4202-b9c7-9b63eb8759ab', 'AGS 1 Kamp Canlı', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'ac4bce4a-1155-45bf-8327-bf69dd76d6ac', 'AGS 1 Kamp Canlı', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Canlı');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '9bc1fcf6-5483-41a2-a134-607d977b8757', 'AGS 1 Kamp Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'cbff7c0e-e94a-4a72-a079-700778614348', 'AGS 1 Kamp Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Video');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '229b5bcd-74d0-4d47-bb24-e7665b5ba3c8', 'AGS 2 KAMP', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '4ec65280-0331-4a82-84d6-67f0b3cbd877', 'AGS 2 KAMP', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'AGS 2 KAMP');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'f484ac2a-a27b-42eb-ae8a-08590c036f31', 'AGS 2 Kamp Canlı', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'd3a2bc82-30f9-47f2-8801-0c863b0ee2eb', 'AGS 2 Kamp Canlı', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Canlı');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '9570a6ca-5565-41f0-bacc-e45af4cad9de', 'AGS 2 Kamp Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'a6e1fd3c-e649-43fb-bb35-defb42f6b19d', 'AGS 2 Kamp Video', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Video');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '14c0491d-9d6c-479c-b16f-d220ac05fbbf', 'DENEME 2026', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'a175ee84-92f2-4913-a6d9-a4fb328a0e4d', 'DENEME 2026', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'DENEME 2026');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '39647f86-a8b9-4125-9d6f-d6c614086523', 'Türkçe Öabt Deneme 2026', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '5d144037-9f62-4797-b096-41a25eaf3f42', 'Türkçe Öabt Deneme 2026', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'Türkçe Öabt Deneme 2026');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'a58618bc-15d6-4b9a-8370-b26e7f801ca7', 'AGS Deneme 2026', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '23d8ce4d-fc59-47f5-94a8-d40965684162', 'AGS Deneme 2026', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'AGS Deneme 2026');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'c8381e27-2404-4889-a0bd-cf41244bd9d6', '2026 Türkçe Öabt Deneme Grubu', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'ca72889b-42b1-439b-a7fd-1c7b4171ba04', '2026 Türkçe Öabt Deneme Grubu', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2026 Türkçe Öabt Deneme Grubu');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'a0c8fb41-5c01-44db-adc7-b00b4b9d6930', 'YENİ PANEL TEST', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'b2b96e67-7d28-47e8-a610-bc7027ffe049', 'YENİ PANEL TEST', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'YENİ PANEL TEST');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '628431e2-48e9-404a-b704-406b28cc871a', 'YENİ PANEL TEST 2', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'a561ea14-46ab-4fe4-8efe-4d982f4688af', 'YENİ PANEL TEST 2', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'YENİ PANEL TEST 2');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '4ebcec83-de03-4990-ac13-8f72d113ca8a', '2027 ERKEN KAYIT', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '089a72ee-39a1-46cb-b2de-373335f989ba', '2027 ERKEN KAYIT', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2027 ERKEN KAYIT');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '04e37b2c-68b0-4933-a0f9-ca6def3d21c5', 'TÜRKÇE ÖABT CANLI', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '72844ef5-3e7f-46a0-b281-9e583cf8bfd4', 'TÜRKÇE ÖABT CANLI', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'TÜRKÇE ÖABT CANLI');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '31acf4a2-c2ff-4c0c-b1f5-5e8695942359', 'TÜRKÇE ÖABT VİDEO', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT 'b14fd895-348e-4cdf-8e00-c461b9970c99', 'TÜRKÇE ÖABT VİDEO', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'TÜRKÇE ÖABT VİDEO');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT 'fe9b13a2-6876-40d7-ad40-fa48f247456f', '2027 Grup(2026 Dersleri)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '9f44a274-386b-41c8-a390-6a58b51548b2', '2027 Grup(2026 Dersleri)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '2027 Grup(2026 Dersleri)');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '6470b06f-0d63-43f4-9a45-c28dc575dff1', 'Türkçe Öabt(2026 Videoları)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '8f30ca96-e85c-4d71-84b5-5b6d2a84e903', 'Türkçe Öabt(2026 Videoları)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '9e6924fb-ce56-41b6-b902-88ae1d910873', 'AGS(2026 Videoları)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '6a9475fb-db9d-48e7-96c5-fdfbd4d4202e', 'AGS(2026 Videoları)', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'AGS(2026 Videoları)');
 
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
-SELECT '05dd89cb-ff1b-4c4d-9ba0-080cd86f9088', 'Introduction to Computer Science', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000' FROM (SELECT 1) dummy
+SELECT '85ab9856-bca2-4df3-8ff5-119862b35676', 'Introduction to Computer Science', CURRENT_TIMESTAMP, '00000000-0000-0000-0000-000000000000'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = 'Introduction to Computer Science');
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Edebiyat Alan Eğitimi(Geleneksel 750 Soru Kampı)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Alan Eğitimi(Geleneksel 750 Soru Kampı)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'SON BAKIŞ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'SON BAKIŞ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Eski Türk Dili' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Eski Türk Dili') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Öğrenme Psikolojisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Öğrenme Psikolojisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - Murat Aytekin' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - Murat Aytekin') 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Motivasyon 2024' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Motivasyon 2024') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi') 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Rehberlik' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Rehberlik') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Türkçe ve Sözel Mantık' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Türkçe ve Sözel Mantık') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Yeni Türk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Yeni Türk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil aileleri' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil aileleri') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilgisi - Harun Dinçoğlu' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilgisi - Harun Dinçoğlu') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Dünya Edebiyatı'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Dünya Edebiyatı') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Vatandaşlık' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Vatandaşlık') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video')
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilimi (Nokta Atışı)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri Soru Çözümü'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi (Nokta Atışı)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1(Eğitim Bilimleri İçeriği)CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1(Eğitim Bilimleri İçeriği)CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Program Geliştirme - Sınıf Yönetimi - Materyal' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Program Geliştirme - Sınıf Yönetimi - Materyal') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 TDE TOPLANTI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 TDE TOPLANTI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Motivasyon 2024' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Motivasyon 2024') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '15 BİN ATAMA MÜLAKAT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '15 BİN ATAMA MÜLAKAT SÜRECİ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '15 BİN ATAMA MÜLAKAT SÜRECİ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '15 BİN ATAMA MÜLAKAT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Çocuk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Çocuk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Tarih' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Tarih') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Matematik' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Matematik') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Dünya Edebiyatı (TÜRKÇE A)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Dünya Edebiyatı (TÜRKÇE A)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - DİL BİLİMİ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - DİL BİLİMİ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Rehberlik' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Rehberlik') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Eski Türk Dili (TDE)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eski Türk Dili (TDE)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri Soru Çözümü') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Yeni Türk Edebiyatı - Harun Dinçoğlu' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Yeni Türk Edebiyatı - Harun Dinçoğlu') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Çocuk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Çocuk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 - Dünya Edebiyatı Tekrar (Harun Dinçoğlu)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 - Dünya Edebiyatı Tekrar (Harun Dinçoğlu)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - Murat Hoca' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - Murat Hoca') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 - Dil Bilimi Tekrar (Emir Hoca)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 - Dil Bilimi Tekrar (Emir Hoca)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1(Eğitim Bilimleri İçeriği)VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1(Eğitim Bilimleri İçeriği)VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Ölçme ve Değerlendirme' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Ölçme ve Değerlendirme') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'KPSS KORK BİZDEN GELİYORUZ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'KPSS KORK BİZDEN GELİYORUZ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
-FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Dil Bilimi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Dil Bilimi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilimi - Soner Hoca' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilimi - Soner Hoca'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
     WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilimi - Soner Hoca') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Gizem Ural - Çocuk Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Gizem Ural - Çocuk Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 GKGY'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Vatandaşlık' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Vatandaşlık') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 GKGY')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 TDE TOPLANTI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 TDE TOPLANTI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Çocuk Edebiyatı - Gizem URAL' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Çocuk Edebiyatı - Gizem URAL') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Alan Eğitimi (Türkçe)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Alan Eğitimi (Türkçe)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Tarih' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Tarih') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilgisi (Yelda Ünal)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (Yelda Ünal)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 4 Temel Beceri (Türkçe)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 4 Temel Beceri (Türkçe)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Eski Türk Dili (TDE)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eski Türk Dili (TDE)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Dünya Edebiyatı (TÜRKÇE A)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Dünya Edebiyatı (TÜRKÇE A)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Coğrafya' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Coğrafya') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'YELDA HOCA 2026' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'YELDA HOCA 2026') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - YENİ TÜRK EDB ve DİL BİLGİSİ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - YENİ TÜRK EDB ve DİL BİLGİSİ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (TDE)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (TDE)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Çocuk Edebiyatı (TÜRKÇE A)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Çocuk Edebiyatı (TÜRKÇE A)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 AGS KAMP Coğrafya' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP Coğrafya') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'SON BAKIŞ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'SON BAKIŞ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Dünya Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Dünya Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Anayasa ve Mevzuat' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Anayasa ve Mevzuat') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Motivasyon 2024' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Motivasyon 2024') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Çocuk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Çocuk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Yelda Ünal - Eski Türk Dili 2 (Metin Çözümlemeleri)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yelda Ünal - Eski Türk Dili 2 (Metin Çözümlemeleri)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Coğrafya' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Coğrafya') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilimi Soru Analizi - Umut Hoca' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi Soru Analizi - Umut Hoca') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Introduction to Computer Science'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Deneme Dersi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Deneme Dersi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Introduction to Computer Science')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 AGS KAMP FATMA HOCA' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP FATMA HOCA') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024-2025 Planlama' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024-2025 Planlama') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Temel Beceri Cepte(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Temel Beceri Cepte(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Dil Bilimi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Dil Bilimi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - HALK EDEBİYATI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - HALK EDEBİYATI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Gizem Ural - Çocuk Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Gizem Ural - Çocuk Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Dil Bilgisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Dil Bilgisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Yelda Ünal - Eski Türk Dili 1 (Konu Anlatımı)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yelda Ünal - Eski Türk Dili 1 (Konu Anlatımı)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözümü Kampı - Murat Aytekin - Eski Türk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözümü Kampı - Murat Aytekin - Eski Türk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Halk Edebiyatı - Çocuk Edebiyatı (Nokta Atışı)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Halk Edebiyatı - Çocuk Edebiyatı (Nokta Atışı)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Matematik' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Matematik') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Maarif Modeli' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Maarif Modeli') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Temel Beceri Cepte(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 - 4 Temel Beceri Cepte Kampı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - 4 Temel Beceri Cepte Kampı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Temel Beceri Cepte(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Çocuk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Çocuk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (Türkçe)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (Türkçe)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Rehberlik' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Rehberlik') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Dünya Edebiyatı (TÜRKÇE A)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Dünya Edebiyatı (TÜRKÇE A)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Gece Nöbeti - Beyit Şerhi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Gece Nöbeti - Beyit Şerhi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Gece Nöbeti - Beyit Şerhi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Gece Nöbeti - Beyit Şerhi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Ölçme ve Değerlendirme' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Ölçme ve Değerlendirme') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 GKGY'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Tarih' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Tarih') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 GKGY')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Rehberlik ve Motivasyon' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Rehberlik ve Motivasyon') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Coğrafya' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Coğrafya') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Dil Bilgisi (Yeni Türk Dili)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Dil Bilgisi (Yeni Türk Dili)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '35 Soru Cepte'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'SON BAKIŞ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'SON BAKIŞ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '35 Soru Cepte')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Çocuk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Çocuk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 AGS KAMP Tarih' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP Tarih') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Yeni Türk Edebiyatı ve Dil Bilgisi - Harun DİNÇOĞLU' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Yeni Türk Edebiyatı ve Dil Bilgisi - Harun DİNÇOĞLU') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Dil Bilimi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Dil Bilimi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 AGS KAMP Anayasa ve Mevzuat' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP Anayasa ve Mevzuat') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Rehberlik ve Özel Eğitim' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Rehberlik ve Özel Eğitim') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Vatandaşlık' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Vatandaşlık') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Yeni Türk Edebiyatı (Türkçe)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Yeni Türk Edebiyatı (Türkçe)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '35 Soru Cepte'), 'Offline' 
-FROM "Courses" WHERE "Title" = '35 Soru Cepte 2024' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '35 Soru Cepte 2024') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '35 Soru Cepte')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Dil Bilimi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Dil Bilimi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dünya Edebiyatı - Edebiyat Bilg. Teo . - Fatih Mehmet Muş' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dünya Edebiyatı - Edebiyat Bilg. Teo . - Fatih Mehmet Muş') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Anayasa ve Mevzuat' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Anayasa ve Mevzuat') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Tarih' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Tarih') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Tarih' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Tarih') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Coğrafya' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Coğrafya') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 ÖYT' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 ÖYT') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Soner Özkan - Dil Bilimi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Soner Özkan - Dil Bilimi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Yeni Türk Edebiyatı (TDE)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Yeni Türk Edebiyatı (TDE)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dört Temel Beceri - ZUHAL EVLİYAOĞLU' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dört Temel Beceri - ZUHAL EVLİYAOĞLU') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Eski Türk Edebiyatı (TÜRKÇE A)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Eski Türk Edebiyatı (TÜRKÇE A)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Eğitimin Temel Kavramları' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eğitimin Temel Kavramları') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - EDEBİYAT BİLG TEO ve DÜNYA EDB' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - EDEBİYAT BİLG TEO ve DÜNYA EDB') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS Matematik KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Matematik KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (Nokta Atışı)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (Nokta Atışı)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Öğretmenlik Mesleğinde Etik' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Öğretmenlik Mesleğinde Etik') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Tarih' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Tarih') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Halk Edebiyatı (TDE)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Halk Edebiyatı (TDE)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Ölçme ve Değerlendirme' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Ölçme ve Değerlendirme') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Halk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Halk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Matematik' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Matematik') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'KPSS KORK BİZDEN GELİYORUZ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'KPSS KORK BİZDEN GELİYORUZ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 AGS KAMP Türkçe ve Sözel Mantık' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP Türkçe ve Sözel Mantık') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Öğrenme Psikolojisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Öğrenme Psikolojisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Eski Türk Dili (TDE)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Eski Türk Dili (TDE)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 GKGY'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Türkçe ve Sözel Mantık' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Türkçe ve Sözel Mantık') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 GKGY')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Gelişim Psikolojisi - Öğrenme Psikolojisi - Rehberlik' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Gelişim Psikolojisi - Öğrenme Psikolojisi - Rehberlik') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Edebiyat Alan Eğitimi(Geleneksel 750 Soru Kampı)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Alan Eğitimi(Geleneksel 750 Soru Kampı)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Motivasyon 2024' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Motivasyon 2024') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Motivasyon 2024' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Motivasyon 2024') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Zuhal Evliyaoğlu - 4 Temel Dil Becerisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Zuhal Evliyaoğlu - 4 Temel Dil Becerisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Türk Halk Edebiyatı - Bülent DEMİR' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Türk Halk Edebiyatı - Bülent DEMİR') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilimi (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Türkçe' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Türkçe') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Rehberlik ve Motivasyon' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Rehberlik ve Motivasyon') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Halk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Halk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Gece Nöbeti - 2024 Türkçe Dersi Öğretim Programı (Maarif Modeli)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Gece Nöbeti - 2024 Türkçe Dersi Öğretim Programı (Maarif Modeli)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Türkçe' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Türkçe') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilgisi - Yeni Türk Edebiyatı (Nokta Atışı)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi - Yeni Türk Edebiyatı (Nokta Atışı)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Dünya Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Dünya Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Eski Türk Dili (TDE)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Eski Türk Dili (TDE)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - ESKİ TÜRK EDEBİYATI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - ESKİ TÜRK EDEBİYATI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Ölçme ve Değerlendirme' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Ölçme ve Değerlendirme') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı (TDE)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı (TDE)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 AGS KAMP FATMA HOCA' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP FATMA HOCA') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Halk Edebiyatı (Türkçe)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Halk Edebiyatı (Türkçe)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Maarif Modeli - Program okuryazarlığı ve Temeller- Ölçme' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Maarif Modeli - Program okuryazarlığı ve Temeller- Ölçme') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - İlker Hayat' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - İlker Hayat') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Dil Bilgisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Dil Bilgisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - ÇOCUK EDEBİYATI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - ÇOCUK EDEBİYATI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 GKGY'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Coğrafya' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Coğrafya') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 GKGY')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 4 Temel Beceri (Türkçe)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 4 Temel Beceri (Türkçe)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Kuramlar - Modeller ve İlkeler' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Kuramlar - Modeller ve İlkeler') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı (TDE)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı (TDE)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Eski Türk Edebiyatı - İlker HAYAT' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Eski Türk Edebiyatı - İlker HAYAT') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Halk Edebiyatı - Bülent Hoca' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Halk Edebiyatı - Bülent Hoca') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024-2025 Planlama' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024-2025 Planlama') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 ÖYT' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 ÖYT') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Matematik' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Matematik') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Öğrenme Psikolojisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Öğrenme Psikolojisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Türkçe ve Sözel Mantık' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '2025 Türkçe ve Sözel Mantık'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
     WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Türkçe ve Sözel Mantık') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS Tarih KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Tarih KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (Türkçe)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (Türkçe)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Felsefi Temel' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Felsefi Temel') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dünya Edebiyatı ve Teorileri - Fatih Mehmet MUŞ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dünya Edebiyatı ve Teorileri - Fatih Mehmet MUŞ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilimi (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Gelişim Psikolojisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Gelişim Psikolojisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Türkçe ve Sözel Mantık' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Türkçe ve Sözel Mantık') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilimi Soru Analizi - Umut Hoca' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi Soru Analizi - Umut Hoca') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Yeni Türk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Yeni Türk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Eğitim Bilimleri'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP ÖYT PG' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP ÖYT PG') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Eğitim Bilimleri')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Rehberlik' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Rehberlik') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - İlker Hayat' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - İlker Hayat') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri Soru Çözümü' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri Soru Çözümü') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 AGS KAMP ZUHAL HOCA' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP ZUHAL HOCA') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (TDE)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (TDE)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Dünya Edebiyatı (TDE)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Dünya Edebiyatı (TDE)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Ölçme ve Değerlendirme' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Ölçme ve Değerlendirme') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilimi - Emir Hoca' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilimi - Emir Hoca') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Öğrenme Psikolojisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Öğrenme Psikolojisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - İlker Hayat' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - İlker Hayat') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Vatandaşlık' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Vatandaşlık') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilimi YELDA ÜNAL' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi YELDA ÜNAL') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Eğitimin Temel Kavramları - Felsefi Temel - ÖYT - Materyal - Sınıf Yönetimi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Eğitimin Temel Kavramları - Felsefi Temel - ÖYT - Materyal - Sınıf Yönetimi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Yeni Türk Edebiyatı ve Dil Bilgisi - Harun DİNÇOĞLU' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Yeni Türk Edebiyatı ve Dil Bilgisi - Harun DİNÇOĞLU') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (Türkçe)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (Türkçe)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - HALK EDEBİYATI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - HALK EDEBİYATI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Gece Nöbeti - Dil Bilgisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Gece Nöbeti - Dil Bilgisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Batı Edebiyatı (Akımlar - Sanatçılar) (Nokta Atışı)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Batı Edebiyatı (Akımlar - Sanatçılar) (Nokta Atışı)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 - Dil Bilimi Tekrar (Emir Hoca)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 - Dil Bilimi Tekrar (Emir Hoca)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Dil Bilgisi (Yeni Türk Dili)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Dil Bilgisi (Yeni Türk Dili)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Edebiyat Alan Eğitimi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Edebiyat Alan Eğitimi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Yabancılara Türkçe Öğretimi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Yabancılara Türkçe Öğretimi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Eğitim Bilimleri'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Gelişim Psikolojisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Gelişim Psikolojisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Eğitim Bilimleri')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Ölçme ve Değerlendirme' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Ölçme ve Değerlendirme') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (Nokta Atışı)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (Nokta Atışı)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 ÖYT' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 ÖYT') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 ÖYT' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 ÖYT') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilimi Soru Analizi - Umut Hoca' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi Soru Analizi - Umut Hoca') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'SON BAKIŞ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'SON BAKIŞ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Batı Edebiyatı ve Teoriler' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Batı Edebiyatı ve Teoriler') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Dil Bilgisi (HARUN DİNÇOĞLU)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Dil Bilgisi (HARUN DİNÇOĞLU)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Dil Bilimi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Dil Bilimi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Çocuk Edebiyatı - Gizem Hoca' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Çocuk Edebiyatı - Gizem Hoca') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Edebiyat Alan Eğitimi(Geleneksel 750 Soru Kampı)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Alan Eğitimi(Geleneksel 750 Soru Kampı)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dil Bilim - Onur UYSAL' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dil Bilim - Onur UYSAL') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Türkçe' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Türkçe') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Kazanım İncelemeleri' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Kazanım İncelemeleri') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri Soru Çözümü' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri Soru Çözümü') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Coğrafya' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Coğrafya') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 ÖYT' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 ÖYT') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS Tarih KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Tarih KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Yeni Türk Edebiyatı (TÜRKÇE A)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Yeni Türk Edebiyatı (TÜRKÇE A)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'YELDA HOCA 2026' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'YELDA HOCA 2026') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilgisi (Yelda Ünal)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (Yelda Ünal)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı (TDE)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı (TDE)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Tarih' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Tarih') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Temel Beceri Cepte(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Temel Beceri Cepte(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Dil Bilgisi (Yeni Türk Dili)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Dil Bilgisi (Yeni Türk Dili)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Toplumsal - Ekonomik - Tarihsel Temeller' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Toplumsal - Ekonomik - Tarihsel Temeller') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Çocuk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Çocuk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı - Murat Hoca' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı - Murat Hoca') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Eğitim Bilimleri'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Öğrenme Psikolojisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Öğrenme Psikolojisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Eğitim Bilimleri')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil aileleri' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil aileleri') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS Tarih KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Tarih KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 AGS Türkçe ve Sözel Mantık' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS Türkçe ve Sözel Mantık') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 AGS Türkçe ve Sözel Mantık' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS Türkçe ve Sözel Mantık') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Temel Beceri Cepte(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 - 4 Temel Beceri Cepte Kampı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - 4 Temel Beceri Cepte Kampı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Temel Beceri Cepte(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Dil Bilgisi (Yeni Türk Dili)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Dil Bilgisi (Yeni Türk Dili)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Matematik' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Matematik') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı (TDE)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı (TDE)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Gelişim Psikolojisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Gelişim Psikolojisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Psikolojik Temel' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Psikolojik Temel') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Eski Türk Dili' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Eski Türk Dili') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Yeni Türk Edebiyatı (TDE)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '2024 Yeni Türk Edebiyatı (TDE)'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
     WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Yeni Türk Edebiyatı (TDE)') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Zuhal Evliyaoğlu - 4 Temel Dil Becerisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Zuhal Evliyaoğlu - 4 Temel Dil Becerisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024-2025 Planlama' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024-2025 Planlama') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı (TDE)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı (TDE)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - 4 Temel Beceri - Zuhal Bedirhan Evliyaoğlu' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - 4 Temel Beceri - Zuhal Bedirhan Evliyaoğlu') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'SON BAKIŞ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'SON BAKIŞ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Motivasyon 2024' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Motivasyon 2024') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Çocuk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Çocuk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Öğrenme Psikolojisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Öğrenme Psikolojisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'KPSS KORK BİZDEN GELİYORUZ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'KPSS KORK BİZDEN GELİYORUZ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - 4 TEMEL BECERİ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - 4 TEMEL BECERİ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Yeni Türk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Yeni Türk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS Tarih KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Tarih KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 AGS KAMP Matematik' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP Matematik') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Dil Bilgisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Dil Bilgisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (Nokta Atışı)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (Nokta Atışı)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Yeni Türk Edebiyatı - Harun Dinçoğlu' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Yeni Türk Edebiyatı - Harun Dinçoğlu') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Soner Özkan - Dil Bilimi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Soner Özkan - Dil Bilimi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 4 Temel Beceri' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 4 Temel Beceri') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - Murat Hoca' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - Murat Hoca') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'SON BAKIŞ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'SON BAKIŞ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Dil Bilimi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Dil Bilimi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Dil Bilgisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Dil Bilgisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil aileleri' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil aileleri') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Anayasa ve Mevzuat' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Anayasa ve Mevzuat') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilimi (Nokta Atışı)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = 'Dil Bilimi (Nokta Atışı)'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
     WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi (Nokta Atışı)') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Beceri Cepte Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 - 4 TEMEL BECERİ CEPTE KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP Vatandaşlık'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 - 4 TEMEL BECERİ CEPTE KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Beceri Cepte Canlı')
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Vatandaşlık') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Zuhal Evliyaoğlu - 4 Temel Dil Becerisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Türkçe'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Zuhal Evliyaoğlu - 4 Temel Dil Becerisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Yeni Türk Çıkmış Soru Çözümü' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yeni Türk Çıkmış Soru Çözümü') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT')
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Türkçe') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Eğitim Teknolojileri' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eğitim Teknolojileri') 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Eğitim Bilimleri'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Ölçme ve Değerlendirme' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Ölçme ve Değerlendirme') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Eğitim Bilimleri')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 - Dil Bilimi Tekrar (Emir Hoca)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 - Dil Bilimi Tekrar (Emir Hoca)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Dünya Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Dünya Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024-2025 Planlama' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024-2025 Planlama') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Çocuk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Çocuk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 AGS KAMP ZUHAL HOCA' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP ZUHAL HOCA') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 AGS KAMP Coğrafya' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP Coğrafya') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Türk Milli Eğitim Sistemi ve Yapısı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Türk Milli Eğitim Sistemi ve Yapısı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Gizem Ural - Çocuk Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Gizem Ural - Çocuk Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Eski Türk Dili' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Eski Türk Dili') 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1(Eğitim Bilimleri İçeriği)CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS 1 Kampı (Eğitim Bilimleri İçeriği)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS 1 Kampı (Eğitim Bilimleri İçeriği)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1(Eğitim Bilimleri İçeriği)CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Tarih' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Tarih') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Öğrenme Psikolojisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Öğrenme Psikolojisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Coğrafya' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Coğrafya') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dünya Edebiyatı ve Teorileri - Fatih Mehmet MUŞ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dünya Edebiyatı ve Teorileri - Fatih Mehmet MUŞ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Gelişim Psikolojisi - Öğrenme Psikolojisi - Rehberlik' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Gelişim Psikolojisi - Öğrenme Psikolojisi - Rehberlik') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilgisi - Harun Dinçoğlu' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilgisi - Harun Dinçoğlu') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 GKGY'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Matematik' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Matematik') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 GKGY')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Coğrafya' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Coğrafya') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'YELDA HOCA 2026' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'YELDA HOCA 2026') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - ÇOCUK EDEBİYATI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - ÇOCUK EDEBİYATI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Tarih' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Tarih') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil aileleri' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil aileleri') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 - Dünya Edebiyatı Tekrar (Harun Dinçoğlu)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 - Dünya Edebiyatı Tekrar (Harun Dinçoğlu)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilimi YELDA ÜNAL' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = 'Dil Bilimi YELDA ÜNAL'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
     WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi YELDA ÜNAL') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Çocuk Edebiyatı'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Maarif Modeli' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Maarif Modeli') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS Türkçe KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Türkçe KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilimi (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Coğrafya' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Coğrafya') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1(Eğitim Bilimleri İçeriği)VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS 1 Kampı (Eğitim Bilimleri İçeriği)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS 1 Kampı (Eğitim Bilimleri İçeriği)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1(Eğitim Bilimleri İçeriği)VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Tarih' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Tarih') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Edebiyat Bilgi ve Teorileri (TÜRKÇE A)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Edebiyat Bilgi ve Teorileri (TÜRKÇE A)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Çocuk Edebiyatı - Gizem URAL' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Çocuk Edebiyatı - Gizem URAL') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Gelişim Psikolojisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Gelişim Psikolojisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Eğitim Bilimleri'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Rehberlik' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Rehberlik') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Eğitim Bilimleri')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 AGS KAMP Tarih' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP Tarih') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Vatandaşlık' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Vatandaşlık') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 AGS KAMP Matematik' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP Matematik') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - İlker Hayat' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - İlker Hayat') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilimi YELDA ÜNAL' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi YELDA ÜNAL') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Çocuk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Maarif Modeli - Program okuryazarlığı ve Temeller- Ölçme' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '2026 Eğitimin Temel Kavramları - Felsefi Temel - ÖYT - Materyal - Sınıf Yönetimi'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Maarif Modeli - Program okuryazarlığı ve Temeller- Ölçme') 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Eğitimin Temel Kavramları - Felsefi Temel - ÖYT - Materyal - Sınıf Yönetimi') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Gece Nöbeti - 2024 Türkçe Dersi Öğretim Programı (Maarif Modeli)'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Gece Nöbeti - 2024 Türkçe Dersi Öğretim Programı (Maarif Modeli)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ VİDEO')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Halk Edebiyatı - Çocuk Edebiyatı (Nokta Atışı)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Eski Türk Edebiyatı - İlker HAYAT'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Halk Edebiyatı - Çocuk Edebiyatı (Nokta Atışı)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dünya Edebiyatı - Edebiyat Bilg. Teo . - Fatih Mehmet Muş' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dünya Edebiyatı - Edebiyat Bilg. Teo . - Fatih Mehmet Muş') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Eski Türk Edebiyatı (TDE)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Eski Türk Edebiyatı (TDE)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Dil Bilimi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Dil Bilimi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dil Bilim - Onur UYSAL' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dil Bilim - Onur UYSAL') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 EDEBİYAT ALAN EĞİTİMİ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 EDEBİYAT ALAN EĞİTİMİ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Eski Türk Edebiyatı - İlker HAYAT') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Yabancılara Türkçe Öğretimi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = 'Çocuk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Çocuk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - 4 Temel Beceri - Zuhal Bedirhan Evliyaoğlu'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - 4 Temel Beceri - Zuhal Bedirhan Evliyaoğlu') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Çocuk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Çocuk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Motivasyon 2024'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Motivasyon 2024') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Yabancılara Türkçe Öğretimi'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
     WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Yabancılara Türkçe Öğretimi') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözümü Kampı - Murat Aytekin - Eski Türk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Anayasa ve Mevzuat'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözümü Kampı - Murat Aytekin - Eski Türk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Anayasa ve Mevzuat') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Alan Eğitimi (Türkçe)'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Alan Eğitimi (Türkçe)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Çocuk Edebiyatı - Gizem Hoca' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dünya Edebiyatı - Edebiyat Bilg. Teo . - Fatih Mehmet Muş'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Çocuk Edebiyatı - Gizem Hoca') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video')
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dünya Edebiyatı - Edebiyat Bilg. Teo . - Fatih Mehmet Muş') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilimi 1' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Türkçe ve Sözel Mantık'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi 1') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Türkçe ve Sözel Mantık') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP Türkçe'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Türkçe') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP Rehberlik'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Rehberlik') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Coğrafya'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Coğrafya') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Matematik'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Matematik') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Introduction to Computer Science'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'TEST SINIFI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = 'TEST SINIFI'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
     WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'TEST SINIFI') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Introduction to Computer Science')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dört Temel Beceri - ZUHAL EVLİYAOĞLU' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dört Temel Beceri - ZUHAL EVLİYAOĞLU') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
     WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Tarih' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Tarih') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Matematik' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Matematik') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Türk Milli Eğitim Sistemi ve Yapısı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Türk Milli Eğitim Sistemi ve Yapısı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (Nokta Atışı)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (Nokta Atışı)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Türkçe ve Sözel Mantık' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Türkçe ve Sözel Mantık') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - Murat Aytekin' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - Murat Aytekin') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Gelişim Psikolojisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Gelişim Psikolojisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Gelişim Psikolojisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Gelişim Psikolojisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Ölçme ve Değerlendirme' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Ölçme ve Değerlendirme') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Çocuk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Çocuk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilgisi (Yelda Ünal)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (Yelda Ünal)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Eğitimin Temel Kavramları - Felsefi Temel - ÖYT - Materyal - Sınıf Yönetimi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Eğitimin Temel Kavramları - Felsefi Temel - ÖYT - Materyal - Sınıf Yönetimi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Soner Özkan - Dil Bilimi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Soner Özkan - Dil Bilimi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Gece Nöbeti - Dil Bilgisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Gece Nöbeti - Dil Bilgisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Rehberlik ve Motivasyon' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Rehberlik ve Motivasyon') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Halk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Halk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözümü Kampı - Murat Aytekin - Eski Türk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözümü Kampı - Murat Aytekin - Eski Türk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - ESKİ TÜRK EDEBİYATI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - ESKİ TÜRK EDEBİYATI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Motivasyon 2024' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Motivasyon 2024') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 AGS KAMP Anayasa ve Mevzuat' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP Anayasa ve Mevzuat') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Vatandaşlık' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Vatandaşlık') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Anayasa ve Mevzuat' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Anayasa ve Mevzuat') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Türk Halk Edebiyatı - Bülent DEMİR' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Türk Halk Edebiyatı - Bülent DEMİR') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP ÖYT PG' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP ÖYT PG') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Coğrafya' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Coğrafya') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans')
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - 4 TEMEL BECERİ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - 4 TEMEL BECERİ') 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'SON BAKIŞ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Yeni Türk Edebiyatı (Türkçe)'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'SON BAKIŞ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Coğrafya' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Coğrafya') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - İlker Hayat' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - İlker Hayat') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Beceri Cepte Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 - 4 TEMEL BECERİ CEPTE KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 - 4 TEMEL BECERİ CEPTE KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Beceri Cepte Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Eğitimin Temel Kavramları' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eğitimin Temel Kavramları') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Soner Özkan - Dil Bilimi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Soner Özkan - Dil Bilimi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Yeni Türk Edebiyatı (Türkçe)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Kazanım İncelemeleri' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '2026 Kazanım İncelemeleri'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
     WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Kazanım İncelemeleri') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Coğrafya' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Coğrafya') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Kuramlar - Modeller ve İlkeler' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Kuramlar - Modeller ve İlkeler') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Yeni Türk Edebiyatı (TDE)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Yeni Türk Edebiyatı (TDE)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Çocuk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Çocuk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Öğretmenlik Mesleğinde Etik' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Öğretmenlik Mesleğinde Etik') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilgisi - Yeni Türk Edebiyatı (Nokta Atışı)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi - Yeni Türk Edebiyatı (Nokta Atışı)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Halk Edebiyatı - Bülent Hoca' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Halk Edebiyatı - Bülent Hoca') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Tarih' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Tarih') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024-2025 Planlama' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024-2025 Planlama') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - DİL BİLİMİ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - DİL BİLİMİ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Vatandaşlık' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Vatandaşlık') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Anayasa ve Mevzuat' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Anayasa ve Mevzuat') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS Matematik KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Matematik KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'KPSS KORK BİZDEN GELİYORUZ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'KPSS KORK BİZDEN GELİYORUZ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı - Murat Hoca' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı - Murat Hoca') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS 1 Kampı (Eğitim Bilimleri İçeriği)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS 1 Kampı (Eğitim Bilimleri İçeriği)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Matematik' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Matematik') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Dil Bilgisi (Yeni Türk Dili)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Dil Bilgisi (Yeni Türk Dili)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Gelişim Psikolojisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Gelişim Psikolojisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 AGS KAMP Türkçe ve Sözel Mantık' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP Türkçe ve Sözel Mantık') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Eski Türk Edebiyatı - İlker HAYAT' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Eski Türk Edebiyatı - İlker HAYAT') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS Türkçe KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Türkçe KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Çocuk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Çocuk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı (TDE)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı (TDE)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Dil Bilgisi (HARUN DİNÇOĞLU)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '2023 Eski Türk Edebiyatı (TÜRKÇE A)'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Dil Bilgisi (HARUN DİNÇOĞLU)') 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Eski Türk Edebiyatı (TÜRKÇE A)') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 AGS KAMP ERDAL HOCA' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP ERDAL HOCA') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS Coğrafya KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Coğrafya KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözümü Kampı - Murat Aytekin - Eski Türk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözümü Kampı - Murat Aytekin - Eski Türk Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Dil Bilimi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Dil Bilimi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Rehberlik' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Rehberlik') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilimi - Soner Hoca' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilimi - Soner Hoca') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Alan Eğitimi (Türkçe)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Alan Eğitimi (Türkçe)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Dünya Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Dünya Edebiyatı') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
     WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024-2025 Planlama' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024-2025 Planlama') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - YENİ TÜRK EDB ve DİL BİLGİSİ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - YENİ TÜRK EDB ve DİL BİLGİSİ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Öğrenme Psikolojisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Öğrenme Psikolojisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 4 Temel Beceri' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 4 Temel Beceri') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ') 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil aileleri' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil aileleri') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Motivasyon 2024' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Motivasyon 2024') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Anayasa ve Mevzuat' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Anayasa ve Mevzuat') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Türkçe' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Türkçe') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Dil Bilgisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '2024 Dil Bilgisi'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
     WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Dil Bilgisi') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Gizem Ural - Çocuk Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Yelda Ünal - Eski Türk Dili 1 (Konu Anlatımı)'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Gizem Ural - Çocuk Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yelda Ünal - Eski Türk Dili 1 (Konu Anlatımı)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Dil Bilgisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Dil Bilgisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Halk Edebiyatı (Türkçe)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Coğrafya'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Coğrafya') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Halk Edebiyatı - Bülent Hoca'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Halk Edebiyatı - Bülent Hoca') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Coğrafya'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Coğrafya') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (Nokta Atışı)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (Nokta Atışı)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilimi (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Tarih'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Tarih') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil aileleri'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil aileleri') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Çocuk Edebiyatı - Gizem URAL'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Çocuk Edebiyatı - Gizem URAL') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Introduction to Computer Science'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Deneme Dersi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Deneme Dersi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Introduction to Computer Science')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dünya Edebiyatı - Edebiyat Bilg. Teo . - Fatih Mehmet Muş'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dünya Edebiyatı - Edebiyat Bilg. Teo . - Fatih Mehmet Muş') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Çocuk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Çocuk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Rehberlik ve Motivasyon'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Rehberlik ve Motivasyon') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Temel Beceri Cepte(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Temel Beceri Cepte(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Dünya Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Dünya Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Yabancılara Türkçe Öğretimi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Yabancılara Türkçe Öğretimi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Psikolojik Temel'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Psikolojik Temel') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024-2025 Planlama'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024-2025 Planlama') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 GKGY'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Tarih'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Tarih') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 GKGY')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Rehberlik ve Motivasyon'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Rehberlik ve Motivasyon') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Toplumsal - Ekonomik - Tarihsel Temeller'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Toplumsal - Ekonomik - Tarihsel Temeller') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dünya Edebiyatı ve Teorileri - Fatih Mehmet MUŞ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dünya Edebiyatı ve Teorileri - Fatih Mehmet MUŞ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Öğrenme Psikolojisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Öğrenme Psikolojisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Çocuk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Çocuk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS Matematik KAMPI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Matematik KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilgisi (Yelda Ünal)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (Yelda Ünal)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 - Dil Bilimi Tekrar (Emir Hoca)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 - Dil Bilimi Tekrar (Emir Hoca)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Motivasyon 2024'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Motivasyon 2024') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilimi (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Dil Bilgisi (HARUN DİNÇOĞLU)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Dil Bilgisi (HARUN DİNÇOĞLU)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '35 Soru Cepte'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'SON BAKIŞ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'SON BAKIŞ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '35 Soru Cepte')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Yeni Türk Edebiyatı ve Dil Bilgisi - Harun DİNÇOĞLU'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Yeni Türk Edebiyatı ve Dil Bilgisi - Harun DİNÇOĞLU') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Vatandaşlık'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Vatandaşlık') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Eski Türk Dili (TDE)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Eski Türk Dili (TDE)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 - Dil Bilimi Tekrar (Emir Hoca)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 - Dil Bilimi Tekrar (Emir Hoca)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (TDE)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (TDE)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 AGS KAMP ERDAL HOCA'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP ERDAL HOCA') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 GKGY'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Coğrafya'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Coğrafya') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 GKGY')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (Türkçe)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (Türkçe)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Eski Türk Dili (TDE)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eski Türk Dili (TDE)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Temel Beceri Cepte(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Temel Beceri Cepte(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Dünya Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Dünya Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 AGS KAMP Matematik'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP Matematik') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 4 Temel Beceri ve Alan Eğitimi (TÜRKÇE A)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 4 Temel Beceri ve Alan Eğitimi (TÜRKÇE A)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - ESKİ TÜRK EDEBİYATI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - ESKİ TÜRK EDEBİYATI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Gelişim Psikolojisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Gelişim Psikolojisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Matematik'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Matematik') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 AGS KAMP ERDAL HOCA'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP ERDAL HOCA') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Eğitim Bilimleri'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP ÖYT PG'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP ÖYT PG') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Eğitim Bilimleri')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Soner Özkan - Dil Bilimi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Soner Özkan - Dil Bilimi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Rehberlik'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Rehberlik') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Ölçme ve Değerlendirme'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Ölçme ve Değerlendirme') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Türk Halk Edebiyatı - Bülent DEMİR'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Türk Halk Edebiyatı - Bülent DEMİR') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Yeni Türk Edebiyatı (TÜRKÇE A)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Yeni Türk Edebiyatı (TÜRKÇE A)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 AGS KAMP Tarih'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP Tarih') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - İlker Hayat'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - İlker Hayat') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - İlker Hayat'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - İlker Hayat') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Eğitim Teknolojileri'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eğitim Teknolojileri') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dört Temel Beceri - ZUHAL EVLİYAOĞLU'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dört Temel Beceri - ZUHAL EVLİYAOĞLU') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - ÇOCUK EDEBİYATI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - ÇOCUK EDEBİYATI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Halk Edebiyatı (TDE)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Halk Edebiyatı (TDE)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Zuhal Evliyaoğlu - 4 Temel Dil Becerisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Zuhal Evliyaoğlu - 4 Temel Dil Becerisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Gelişim Psikolojisi - Öğrenme Psikolojisi - Rehberlik'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Gelişim Psikolojisi - Öğrenme Psikolojisi - Rehberlik') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Matematik'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Matematik') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilgisi - Yeni Türk Edebiyatı (Nokta Atışı)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi - Yeni Türk Edebiyatı (Nokta Atışı)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - Murat Hoca'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - Murat Hoca') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - ÇOCUK EDEBİYATI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - ÇOCUK EDEBİYATI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Ölçme ve Değerlendirme'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Ölçme ve Değerlendirme') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Tarih'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Tarih') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - YENİ TÜRK EDB ve DİL BİLGİSİ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - YENİ TÜRK EDB ve DİL BİLGİSİ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Maarif Modeli'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Maarif Modeli') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - DİL BİLİMİ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - DİL BİLİMİ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP Türkçe'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Türkçe') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Eski Türk Dili (TDE)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eski Türk Dili (TDE)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - 4 Temel Beceri - Zuhal Bedirhan Evliyaoğlu'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - 4 Temel Beceri - Zuhal Bedirhan Evliyaoğlu') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözümü Kampı - Murat Aytekin - Eski Türk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözümü Kampı - Murat Aytekin - Eski Türk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Batı Edebiyatı ve Teoriler'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Batı Edebiyatı ve Teoriler') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Çocuk Edebiyatı (TÜRKÇE A)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Çocuk Edebiyatı (TÜRKÇE A)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 ÖYT'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 ÖYT') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - YENİ TÜRK EDB ve DİL BİLGİSİ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - YENİ TÜRK EDB ve DİL BİLGİSİ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Yabancılara Türkçe Öğretimi (TÜRKÇE A)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Yabancılara Türkçe Öğretimi (TÜRKÇE A)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - DİL BİLİMİ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - DİL BİLİMİ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024-2025 Planlama'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024-2025 Planlama') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Çocuk Edebiyatı - Gizem Hoca'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Çocuk Edebiyatı - Gizem Hoca') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Matematik'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Matematik') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Ölçme ve Değerlendirme'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Ölçme ve Değerlendirme') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 AGS KAMP ZUHAL HOCA'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP ZUHAL HOCA') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 EDEBİYAT ALAN EĞİTİMİ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 EDEBİYAT ALAN EĞİTİMİ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilgisi (Yelda Ünal)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (Yelda Ünal)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Çocuk Edebiyatı - Gizem URAL'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Çocuk Edebiyatı - Gizem URAL') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 TDE TOPLANTI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 TDE TOPLANTI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - İlker Hayat'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - İlker Hayat') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Coğrafya'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Coğrafya') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 GKGY'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Türkçe ve Sözel Mantık'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Türkçe ve Sözel Mantık') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 GKGY')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 GKGY'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Matematik'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Matematik') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 GKGY')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 GKGY'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Vatandaşlık'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Vatandaşlık') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 GKGY')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilimi Soru Analizi - Umut Hoca'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi Soru Analizi - Umut Hoca') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı (TDE)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı (TDE)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Maarif Modeli - Program okuryazarlığı ve Temeller- Ölçme'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Maarif Modeli - Program okuryazarlığı ve Temeller- Ölçme') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Eski Türk Dili'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Eski Türk Dili') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - Murat Hoca'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Eski Türk Edebiyatı - Murat Hoca') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 4 Temel Beceri'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 4 Temel Beceri') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP Vatandaşlık'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Vatandaşlık') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Çocuk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Çocuk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Tarih'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Tarih') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Eğitimin Temel Kavramları'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eğitimin Temel Kavramları') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Motivasyon 2024'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Motivasyon 2024') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS Coğrafya KAMPI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Coğrafya KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Halk Edebiyatı (Türkçe)'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
     WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Halk Edebiyatı (Türkçe)') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
@@ -5782,323 +3116,3356 @@ WHERE NOT EXISTS (
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Dil Bilgisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Dil Bilgisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Türkçe' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '2024 Coğrafya'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Türkçe') 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Coğrafya') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Program Geliştirme - Sınıf Yönetimi - Materyal' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Program Geliştirme - Sınıf Yönetimi - Materyal') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Coğrafya' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Coğrafya') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Halk Edebiyatı (TÜRKÇE A)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Halk Edebiyatı (TÜRKÇE A)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024-2025 Planlama' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024-2025 Planlama'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
     WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024-2025 Planlama') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Halk Edebiyatı (TDE)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Halk Edebiyatı (TDE)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Program Geliştirme - Sınıf Yönetimi - Materyal' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Program Geliştirme - Sınıf Yönetimi - Materyal') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilgisi (Yelda Ünal)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (Yelda Ünal)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilgisi (Yelda Ünal)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (Yelda Ünal)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS Matematik KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Matematik KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP ÖYT PG' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP ÖYT PG') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 Yabancılara Türkçe Öğretimi (TÜRKÇE A)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = 'Yeni Türk Çıkmış Soru Çözümü'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Yabancılara Türkçe Öğretimi (TÜRKÇE A)') 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yeni Türk Çıkmış Soru Çözümü') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Toplumsal - Ekonomik - Tarihsel Temeller' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Gizem Ural - Çocuk Edb.'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Toplumsal - Ekonomik - Tarihsel Temeller') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Felsefi Temel' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Felsefi Temel') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Gizem Ural - Çocuk Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Kazanım İncelemeleri' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '2026 4 Temel Beceri'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 4 Temel Beceri') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Kazanım İncelemeleri'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Kazanım İncelemeleri') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Dil Bilimi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Dil Bilimi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'SON BAKIŞ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'SON BAKIŞ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilgisi - Harun Dinçoğlu'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilgisi - Harun Dinçoğlu') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS 1 Kampı (Eğitim Bilimleri İçeriği)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS 1 Kampı (Eğitim Bilimleri İçeriği)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Vatandaşlık'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Vatandaşlık') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Kazanım İncelemeleri'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
     WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Kazanım İncelemeleri') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Tarih' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Tarih') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Batı Edebiyatı (Akımlar - Sanatçılar) (Nokta Atışı)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Batı Edebiyatı (Akımlar - Sanatçılar) (Nokta Atışı)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilimi 1' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = 'SON BAKIŞ'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi 1') 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'SON BAKIŞ') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Psikolojik Temel' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Zuhal Evliyaoğlu - 4 Temel Dil Becerisi'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Psikolojik Temel') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Zuhal Evliyaoğlu - 4 Temel Dil Becerisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS Coğrafya KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Eğitim Bilimleri'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP Öğrenme Psikolojisi'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Coğrafya KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Öğrenme Psikolojisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Eğitim Bilimleri')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - Murat Aytekin'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 EDEBİYAT ALAN EĞİTİMİ' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 EDEBİYAT ALAN EĞİTİMİ') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - Murat Aytekin') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.') 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Program Geliştirme - Sınıf Yönetimi - Materyal'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Program Geliştirme - Sınıf Yönetimi - Materyal') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Anayasa ve Mevzuat'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Anayasa ve Mevzuat') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Toplumsal - Ekonomik - Tarihsel Temeller'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Toplumsal - Ekonomik - Tarihsel Temeller') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Anayasa ve Mevzuat'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Anayasa ve Mevzuat') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 - Dünya Edebiyatı Tekrar (Harun Dinçoğlu)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '2026 - Dünya Edebiyatı Tekrar (Harun Dinçoğlu)'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
     WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 - Dünya Edebiyatı Tekrar (Harun Dinçoğlu)') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Dünya Edebiyatı (TDE)'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Dünya Edebiyatı (TDE)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Yeni Türk Edebiyatı (TDE)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Yeni Türk Edebiyatı (TDE)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilimi (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (Nokta Atışı)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (Nokta Atışı)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'SON BAKIŞ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'SON BAKIŞ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Rehberlik ve Özel Eğitim'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Rehberlik ve Özel Eğitim') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Dünya Edebiyatı (TÜRKÇE A)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Dünya Edebiyatı (TÜRKÇE A)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı (TDE)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı (TDE)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP ÖYT PG'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP ÖYT PG') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - İlker Hayat'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - İlker Hayat') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Gece Nöbeti - Beyit Şerhi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Gece Nöbeti - Beyit Şerhi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Motivasyon 2024'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Motivasyon 2024') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS Türkçe KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '2025 Tarih'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Tarih') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Halk Edebiyatı (Türkçe)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Halk Edebiyatı (Türkçe)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP Coğrafya'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Coğrafya') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 AGS Türkçe ve Sözel Mantık'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS Türkçe ve Sözel Mantık') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS Tarih KAMPI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Tarih KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözümü Kampı - Murat Aytekin - Eski Türk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözümü Kampı - Murat Aytekin - Eski Türk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP Tarih'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Tarih') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Alan Eğitimi (Türkçe)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Alan Eğitimi (Türkçe)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilgisi - Harun Dinçoğlu'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilgisi - Harun Dinçoğlu') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS Türkçe KAMPI'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
     WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Türkçe KAMPI') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Çocuk Edebiyatı' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS Tarih KAMPI'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Çocuk Edebiyatı') 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Tarih KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Dil Bilgisi (Yeni Türk Dili)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Dil Bilgisi (Yeni Türk Dili)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dört Temel Beceri - ZUHAL EVLİYAOĞLU'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dört Temel Beceri - ZUHAL EVLİYAOĞLU') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '35 Soru Cepte'), 'Offline' 
+FROM "Courses" WHERE "Title" = '35 Soru Cepte 2024'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '35 Soru Cepte 2024') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '35 Soru Cepte')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Tarih'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Tarih') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'SON BAKIŞ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'SON BAKIŞ') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Matematik' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Çocuk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Matematik') 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Çocuk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Yelda Ünal - Eski Türk Dili 1 (Konu Anlatımı)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yelda Ünal - Eski Türk Dili 1 (Konu Anlatımı)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024-2025 Planlama'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024-2025 Planlama') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Çocuk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Çocuk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1(Eğitim Bilimleri İçeriği)VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1(Eğitim Bilimleri İçeriği)VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Yeni Türk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Yeni Türk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024-2025 Planlama'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024-2025 Planlama') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Rehberlik'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Rehberlik') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1(Eğitim Bilimleri İçeriği)CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS 1 Kampı (Eğitim Bilimleri İçeriği)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS 1 Kampı (Eğitim Bilimleri İçeriği)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1(Eğitim Bilimleri İçeriği)CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Ölçme ve Değerlendirme'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Ölçme ve Değerlendirme') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP ÖYT PG'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP ÖYT PG') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS Tarih KAMPI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Tarih KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Türkçe'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Türkçe') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'YELDA HOCA 2026'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'YELDA HOCA 2026') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Edebiyat Alan Eğitimi(Geleneksel 750 Soru Kampı)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Alan Eğitimi(Geleneksel 750 Soru Kampı)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilimi Soru Analizi - Umut Hoca'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi Soru Analizi - Umut Hoca') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 ÖYT'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 ÖYT') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Temel Beceri Cepte(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 - 4 Temel Beceri Cepte Kampı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - 4 Temel Beceri Cepte Kampı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Temel Beceri Cepte(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı - Murat Hoca' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = 'YELDA HOCA 2026'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'YELDA HOCA 2026') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024-2025 Planlama'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024-2025 Planlama') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 AGS KAMP Matematik'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP Matematik') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Halk Edebiyatı - Çocuk Edebiyatı (Nokta Atışı)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Halk Edebiyatı - Çocuk Edebiyatı (Nokta Atışı)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Eğitim Teknolojileri'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eğitim Teknolojileri') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 AGS KAMP Anayasa ve Mevzuat'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP Anayasa ve Mevzuat') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Eğitimin Temel Kavramları - Felsefi Temel - ÖYT - Materyal - Sınıf Yönetimi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Eğitimin Temel Kavramları - Felsefi Temel - ÖYT - Materyal - Sınıf Yönetimi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilimi (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Yelda Ünal - Eski Türk Dili 2 (Metin Çözümlemeleri)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yelda Ünal - Eski Türk Dili 2 (Metin Çözümlemeleri)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Anayasa ve Mevzuat'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Anayasa ve Mevzuat') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Rehberlik'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Rehberlik') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 AGS KAMP Anayasa ve Mevzuat'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP Anayasa ve Mevzuat') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 ÖYT'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 ÖYT') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilimi YELDA ÜNAL'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi YELDA ÜNAL') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - ESKİ TÜRK EDEBİYATI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - ESKİ TÜRK EDEBİYATI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Soner Özkan - Dil Bilimi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Soner Özkan - Dil Bilimi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 AGS KAMP FATMA HOCA'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP FATMA HOCA') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Edebiyat Alan Eğitimi(Geleneksel 750 Soru Kampı)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Alan Eğitimi(Geleneksel 750 Soru Kampı)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Çocuk Edebiyatı - Gizem Hoca'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Çocuk Edebiyatı - Gizem Hoca') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Motivasyon 2024'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Motivasyon 2024') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Psikolojik Temel'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Psikolojik Temel') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilgisi (Yelda Ünal)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (Yelda Ünal)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
+FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 - Dil Bilimi Tekrar (Emir Hoca)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 - Dil Bilimi Tekrar (Emir Hoca)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 AGS KAMP FATMA HOCA'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP FATMA HOCA') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Batı Edebiyatı (Akımlar - Sanatçılar) (Nokta Atışı)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Batı Edebiyatı (Akımlar - Sanatçılar) (Nokta Atışı)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Öğretmenlik Mesleğinde Etik'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Öğretmenlik Mesleğinde Etik') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Batı Edebiyatı ve Teoriler'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Batı Edebiyatı ve Teoriler') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Dünya Edebiyatı (TÜRKÇE A)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Dünya Edebiyatı (TÜRKÇE A)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Beceri Cepte Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 - 4 TEMEL BECERİ CEPTE KAMPI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 - 4 TEMEL BECERİ CEPTE KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Beceri Cepte Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Motivasyon 2024'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Motivasyon 2024') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP Öğrenme Psikolojisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Öğrenme Psikolojisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Kuramlar - Modeller ve İlkeler'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Kuramlar - Modeller ve İlkeler') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Batı Edebiyatı ve Teoriler'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Batı Edebiyatı ve Teoriler') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı - Murat Hoca'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı - Murat Hoca') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 ÖYT'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 ÖYT') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Öğrenme Psikolojisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Öğrenme Psikolojisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Eğitimin Temel Kavramları'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eğitimin Temel Kavramları') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP Türkçe'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Türkçe') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Eski Türk Edebiyatı (TDE)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Eski Türk Edebiyatı (TDE)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'KPSS KORK BİZDEN GELİYORUZ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'KPSS KORK BİZDEN GELİYORUZ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dil Bilim - Onur UYSAL'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dil Bilim - Onur UYSAL') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 AGS KAMP Türkçe ve Sözel Mantık'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP Türkçe ve Sözel Mantık') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil aileleri'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil aileleri') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı - Murat Hoca'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
     WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı - Murat Hoca') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı'), 'Offline' 
-FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - 4 Temel Beceri - Zuhal Bedirhan Evliyaoğlu' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Tarih'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - 4 Temel Beceri - Zuhal Bedirhan Evliyaoğlu') 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Tarih') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Eski Türk Dili'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Eski Türk Dili') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilimi YELDA ÜNAL'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi YELDA ÜNAL') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı (TDE)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı (TDE)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 AGS KAMP Coğrafya'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP Coğrafya') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Edebiyat Bilgi ve Teorileri (TÜRKÇE A)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Edebiyat Bilgi ve Teorileri (TÜRKÇE A)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Felsefi Temel'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Felsefi Temel') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Rehberlik ve Motivasyon'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Rehberlik ve Motivasyon') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Dil Bilgisi (HARUN DİNÇOĞLU)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Dil Bilgisi (HARUN DİNÇOĞLU)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 AGS KAMP Coğrafya'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP Coğrafya') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 AGS KAMP ZUHAL HOCA'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP ZUHAL HOCA') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 4 Temel Beceri (Türkçe)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 4 Temel Beceri (Türkçe)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilgisi (Yelda Ünal)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (Yelda Ünal)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP Öğrenme Psikolojisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Öğrenme Psikolojisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Dil Bilimi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Dil Bilimi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Gelişim Psikolojisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Gelişim Psikolojisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Gece Nöbeti - Beyit Şerhi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Gece Nöbeti - Beyit Şerhi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP Coğrafya'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Coğrafya') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilimi 1'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi 1') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Öğrenme Psikolojisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Öğrenme Psikolojisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Yeni Türk Edebiyatı - Harun Dinçoğlu'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Yeni Türk Edebiyatı - Harun Dinçoğlu') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP Tarih'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Tarih') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS Matematik KAMPI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Matematik KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'KPSS KORK BİZDEN GELİYORUZ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'KPSS KORK BİZDEN GELİYORUZ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP Ölçme ve Değerlendirme'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Ölçme ve Değerlendirme') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Öğrenme Psikolojisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Öğrenme Psikolojisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Türkçe'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Türkçe') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (Nokta Atışı)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (Nokta Atışı)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözümü Kampı - Murat Aytekin - Eski Türk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözümü Kampı - Murat Aytekin - Eski Türk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - 4 TEMEL BECERİ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - 4 TEMEL BECERİ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Tarih'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Tarih') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Halk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Halk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Gelişim Psikolojisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Gelişim Psikolojisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS Matematik KAMPI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Matematik KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 EDEBİYAT ALAN EĞİTİMİ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 EDEBİYAT ALAN EĞİTİMİ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Gizem Ural - Çocuk Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Gizem Ural - Çocuk Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Dil Bilgisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Dil Bilgisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 TDE TOPLANTI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 TDE TOPLANTI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 - Dünya Edebiyatı Tekrar (Harun Dinçoğlu)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 - Dünya Edebiyatı Tekrar (Harun Dinçoğlu)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - 4 TEMEL BECERİ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - 4 TEMEL BECERİ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Türk Milli Eğitim Sistemi ve Yapısı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Türk Milli Eğitim Sistemi ve Yapısı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Dil Bilgisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Dil Bilgisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Dil Bilgisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Dil Bilgisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 - Dünya Edebiyatı Tekrar (Harun Dinçoğlu)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 - Dünya Edebiyatı Tekrar (Harun Dinçoğlu)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS Matematik KAMPI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Matematik KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil aileleri'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil aileleri') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (Türkçe)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (Türkçe)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Soner Özkan - Dil Bilimi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Soner Özkan - Dil Bilimi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı (TDE)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı (TDE)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Rehberlik'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Rehberlik') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Beceri Cepte Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 - 4 TEMEL BECERİ CEPTE KAMPI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 - 4 TEMEL BECERİ CEPTE KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Beceri Cepte Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Zuhal Evliyaoğlu - 4 Temel Dil Becerisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Zuhal Evliyaoğlu - 4 Temel Dil Becerisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '15 BİN ATAMA MÜLAKAT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '15 BİN ATAMA MÜLAKAT SÜRECİ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '15 BİN ATAMA MÜLAKAT SÜRECİ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '15 BİN ATAMA MÜLAKAT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Çocuk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Çocuk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Gelişim Psikolojisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Gelişim Psikolojisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilimi - Emir Hoca'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilimi - Emir Hoca') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Edebiyat Alan Eğitimi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Edebiyat Alan Eğitimi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Gece Nöbeti - Dil Bilgisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Gece Nöbeti - Dil Bilgisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Dil Bilgisi (Yeni Türk Dili)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Dil Bilgisi (Yeni Türk Dili)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Gelişim Psikolojisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Gelişim Psikolojisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Vatandaşlık'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Vatandaşlık') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 4 Temel Beceri (Türkçe)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 4 Temel Beceri (Türkçe)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilimi - Emir Hoca' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Yeni Türk Edebiyatı - Harun Dinçoğlu'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Yeni Türk Edebiyatı - Harun Dinçoğlu') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP Ölçme ve Değerlendirme'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Ölçme ve Değerlendirme') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Coğrafya'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Coğrafya') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Temel Beceri Cepte(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 - 4 Temel Beceri Cepte Kampı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - 4 Temel Beceri Cepte Kampı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '4 Temel Beceri Cepte(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Çocuk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Çocuk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Eski Türk Dili'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Eski Türk Dili') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 4 Temel Beceri'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 4 Temel Beceri') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilimi 1'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi 1') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilimi Soru Analizi - Umut Hoca'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi Soru Analizi - Umut Hoca') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Program Geliştirme - Sınıf Yönetimi - Materyal'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Program Geliştirme - Sınıf Yönetimi - Materyal') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS Türkçe KAMPI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Türkçe KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Gelişim Psikolojisi - Öğrenme Psikolojisi - Rehberlik'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Gelişim Psikolojisi - Öğrenme Psikolojisi - Rehberlik') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Batı Edebiyatı ve Edebiyat Bilgi Teorileri') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Edebiyat Alan Eğitimi(Geleneksel 750 Soru Kampı)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Alan Eğitimi(Geleneksel 750 Soru Kampı)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Dil Bilimi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Dil Bilimi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Yeni Türk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Yeni Türk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Matematik'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Matematik') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Türk Halk Edebiyatı - Bülent DEMİR'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Türk Halk Edebiyatı - Bülent DEMİR') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilimi (Nokta Atışı)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi (Nokta Atışı)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Yeni Türk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Yeni Türk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 ÖYT'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 ÖYT') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Eğitim Bilimleri'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP Ölçme ve Değerlendirme'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Ölçme ve Değerlendirme') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Eğitim Bilimleri')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Soner Özkan - Dil Bilimi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Soner Özkan - Dil Bilimi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'KPSS KORK BİZDEN GELİYORUZ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'KPSS KORK BİZDEN GELİYORUZ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Dil Bilgisi (Yeni Türk Dili)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Dil Bilgisi (Yeni Türk Dili)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil aileleri'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil aileleri') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Matematik'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Matematik') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Tarih'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Tarih') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilimi - Emir Hoca'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
     WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilimi - Emir Hoca') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (Türkçe)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (Türkçe)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS Türkçe KAMPI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Türkçe KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözümü Kampı - Murat Aytekin - Eski Türk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözümü Kampı - Murat Aytekin - Eski Türk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Eğitim Bilimleri'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP Rehberlik'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Rehberlik') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Eğitim Bilimleri')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Gece Nöbeti - 2024 Türkçe Dersi Öğretim Programı (Maarif Modeli)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Gece Nöbeti - 2024 Türkçe Dersi Öğretim Programı (Maarif Modeli)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP Vatandaşlık'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Vatandaşlık') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Dil Bilimi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Dil Bilimi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dil Bilim - Onur UYSAL'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dil Bilim - Onur UYSAL') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'SON BAKIŞ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'SON BAKIŞ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Program Geliştirme - Sınıf Yönetimi - Materyal'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Program Geliştirme - Sınıf Yönetimi - Materyal') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Eski Türk Dili (TDE)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Eski Türk Dili (TDE)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Maarif Modeli - Program okuryazarlığı ve Temeller- Ölçme'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Maarif Modeli - Program okuryazarlığı ve Temeller- Ölçme') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (TDE)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Eski Türk Edebiyatı (TDE)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Coğrafya'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Coğrafya') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Tarih'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Tarih') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - Murat Aytekin'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - Murat Aytekin') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yeni Türk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Eski Türk Dili'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Eski Türk Dili') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Öğretmenlik Mesleğinde Etik'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Öğretmenlik Mesleğinde Etik') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Yeni Türk Edebiyatı (TDE)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Yeni Türk Edebiyatı (TDE)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı (TDE)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı (TDE)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Rehberlik ve Motivasyon'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Rehberlik ve Motivasyon') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Dil Bilimi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Dil Bilimi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'SON BAKIŞ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'SON BAKIŞ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - Murat Aytekin' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - Geleneksel Soru Çözüm Kampı - Umut Tetik - Dil Bilimi - Çocuk Edb. - Dünya Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Eski Türk Edebiyatı - İlker HAYAT'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Eski Türk Edebiyatı - İlker HAYAT') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '4 Temel Beceri - Alan Eğitimi - Yabancılara Türkçe Öğretimi (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Halk Edebiyatı - Bülent Hoca'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Halk Edebiyatı - Bülent Hoca') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Kuramlar - Modeller ve İlkeler'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Kuramlar - Modeller ve İlkeler') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - HALK EDEBİYATI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - HALK EDEBİYATI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Maarif Modeli'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Maarif Modeli') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri Soru Çözümü'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 4 Temel Beceri Soru Çözümü') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilgisi - Yeni Türk Edebiyatı (Nokta Atışı)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi - Yeni Türk Edebiyatı (Nokta Atışı)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Halk Edebiyatı (TDE)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Halk Edebiyatı (TDE)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Gizem Ural - Çocuk Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Gizem Ural - Çocuk Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS Coğrafya KAMPI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Coğrafya KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP Gelişim Psikolojisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Gelişim Psikolojisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Türkçe ve Sözel Mantık'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Türkçe ve Sözel Mantık') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'KPSS KORK BİZDEN GELİYORUZ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'KPSS KORK BİZDEN GELİYORUZ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Matematik'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Matematik') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - HALK EDEBİYATI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - HALK EDEBİYATI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Çocuk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Çocuk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Vatandaşlık'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Vatandaşlık') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Matematik'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Matematik') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS Coğrafya KAMPI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Coğrafya KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Motivasyon 2024'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Motivasyon 2024') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Dil Bilgisi (Yeni Türk Dili)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Dil Bilgisi (Yeni Türk Dili)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Dil Bilgisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Dil Bilgisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'YELDA HOCA 2026'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'YELDA HOCA 2026') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Zuhal Evliyaoğlu - 4 Temel Dil Becerisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Zuhal Evliyaoğlu - 4 Temel Dil Becerisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Halk Edebiyatı (GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Anayasa ve Mevzuat'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Anayasa ve Mevzuat') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Felsefi Temel'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Felsefi Temel') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Halk Edebiyatı (TDE)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Halk Edebiyatı (TDE)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Rehberlik Ve Motivasyon') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Dil Bilgisi (Yeni Türk Dili)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Dil Bilgisi (Yeni Türk Dili)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '(2024 KAMP) Dil Bilgisi - YELDA ÜNAL') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Matematik'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Matematik') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS Coğrafya KAMPI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Coğrafya KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 AGS KAMP Türkçe ve Sözel Mantık'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP Türkçe ve Sözel Mantık') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - EDEBİYAT BİLG TEO ve DÜNYA EDB'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - EDEBİYAT BİLG TEO ve DÜNYA EDB') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Bülent Demir - Halk Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Yelda Ünal - Eski Türk Dili 2 (Metin Çözümlemeleri)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yelda Ünal - Eski Türk Dili 2 (Metin Çözümlemeleri)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 AGS Türkçe ve Sözel Mantık'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS Türkçe ve Sözel Mantık') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP Gelişim Psikolojisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Gelişim Psikolojisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - EDEBİYAT BİLG TEO ve DÜNYA EDB'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - EDEBİYAT BİLG TEO ve DÜNYA EDB') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Gizem Ural - Çocuk Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Gizem Ural - Çocuk Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil Bilgisi (Yelda Ünal)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilgisi (Yelda Ünal)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı (TDE)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Halk Edebiyatı (TDE)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Coğrafya'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Coğrafya') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS Türkçe KAMPI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Türkçe KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Halk Edebiyatı - Çocuk Edebiyatı (Nokta Atışı)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Halk Edebiyatı - Çocuk Edebiyatı (Nokta Atışı)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Yeni Türk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Motivasyon 2024'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Motivasyon 2024') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS Tarih KAMPI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Tarih KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Halk Edebiyatı (TÜRKÇE A)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Halk Edebiyatı (TÜRKÇE A)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Türkçe ve Sözel Mantık'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Türkçe ve Sözel Mantık') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Fatih Mehmet Muş - Edebiyat Bilgi Teorileri ve Dünya Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE (VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Dil Bilimi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Dil Bilimi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Dil aileleri'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil aileleri') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Dünya Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Dünya Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Türk Milli Eğitim Sistemi ve Yapısı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Türk Milli Eğitim Sistemi ve Yapısı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dünya Edebiyatı ve Teorileri - Fatih Mehmet MUŞ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Dünya Edebiyatı ve Teorileri - Fatih Mehmet MUŞ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Dil Bilgisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Dil Bilgisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Dil Bilimi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Dil Bilimi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 AGS KAMP Tarih'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP Tarih') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2 Kamp Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilimi - Soner Hoca'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '850 Soru Çözüm Kampı - Dil Bilimi - Soner Hoca') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '850 Soru Kampı Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024-2025 Planlama'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024-2025 Planlama') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 1. PAKET(Eğitimin Temelleri ve Mevzuat)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Dünya Edebiyatı (TÜRKÇE A)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Dünya Edebiyatı (TÜRKÇE A)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Dil Bilimi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Dil Bilimi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Anayasa ve Mevzuat'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Anayasa ve Mevzuat') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Gece Nöbeti - Dil Bilgisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Gece Nöbeti - Dil Bilgisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1(Eğitim Bilimleri İçeriği)CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Anayasa ve Mevzuat KAMPI') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1(Eğitim Bilimleri İçeriği)CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Halk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Halk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Eğitim Bilimleri'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP Gelişim Psikolojisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Gelişim Psikolojisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Eğitim Bilimleri')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - Murat Aytekin'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
     WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - Murat Aytekin') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
@@ -6106,254 +6473,173 @@ WHERE NOT EXISTS (
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Matematik' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '2024 KAMP Coğrafya'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Matematik') 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Coğrafya') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS Coğrafya KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Coğrafya KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 AGS 2. PAKET (GKGY İçeriği) Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı - Yelda Ünal - Dil Bilgisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Yelda Ünal - Eski Türk Dili 2 (Metin Çözümlemeleri)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yelda Ünal - Eski Türk Dili 2 (Metin Çözümlemeleri)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Yeni Türk Edebiyatı (Türkçe)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Yeni Türk Edebiyatı (Türkçe)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS Matematik KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Matematik KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Gelişim Psikolojisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Gelişim Psikolojisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 KAMP Vatandaşlık' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Vatandaşlık') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Rehberlik ve Motivasyon' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Rehberlik ve Motivasyon') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Batı Edebiyatı ve Teoriler' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Batı Edebiyatı ve Teoriler') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe Öabt(2026 Videoları)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Eski Türk Dili' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Eski Türk Dili') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı İlker Hayat - Eski Türk Edb.') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - EDEBİYAT BİLG TEO ve DÜNYA EDB' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 NOKTA ATIŞI KAMPI - EDEBİYAT BİLG TEO ve DÜNYA EDB') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrarı(CANLI)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Zuhal Evliyaoğlu - 4 Temel Dil Becerisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Zuhal Evliyaoğlu - 4 Temel Dil Becerisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Yelda Ünal - Eski Türk Dili 1 (Konu Anlatımı)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Yelda Ünal - Eski Türk Dili 1 (Konu Anlatımı)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Dil Bilimi (GELENEKSEL 750 SORU KAMPI)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Dil Bilimi (GELENEKSEL 750 SORU KAMPI)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(VİDEO)')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS Türkçe KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Türkçe KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Halk Edebiyatı (TDE)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Halk Edebiyatı (TDE)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Edebiyat ÖABT Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Dil Bilgisi' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Dil Bilgisi') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'Gece Nöbeti - 2024 Türkçe Dersi Öğretim Programı (Maarif Modeli)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Gece Nöbeti - 2024 Türkçe Dersi Öğretim Programı (Maarif Modeli)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GECE NÖBETİ VİDEO')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2023 4 Temel Beceri ve Alan Eğitimi (TÜRKÇE A)' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 4 Temel Beceri ve Alan Eğitimi (TÜRKÇE A)') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Türkçe ÖABT')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Video'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 AGS KAMP ERDAL HOCA' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 AGS KAMP ERDAL HOCA') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1 Kamp Video')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = 'AGS Coğrafya KAMPI' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS Coğrafya KAMPI') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 2(GKGY İçeriği)CANLI')
-);
-
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Rehberlik' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
-    SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Rehberlik') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri Ve Batı Edebiyatı (Akımlar - Sanatçılar)(GELENEKSEL 750 SORU KAMPI)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'TDE')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2025 Eğitim Teknolojileri' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '2025 Coğrafya'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eğitim Teknolojileri') 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Coğrafya') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS(2025 Videolar)')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2024 Türkçe' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1(Eğitim Bilimleri İçeriği)VİDEO'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'AGS 1 Kampı (Eğitim Bilimleri İçeriği)'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Türkçe') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'GKGY Önlisans')
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'AGS 1 Kampı (Eğitim Bilimleri İçeriği)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS 1(Eğitim Bilimleri İçeriği)VİDEO')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 Batı Edebiyatı ve Teoriler' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP Tarih'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Batı Edebiyatı ve Teoriler') 
-    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Tarih') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 GKGY')
 );
 
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO'), 'Offline' 
-FROM "Courses" WHERE "Title" = '2026 4 Temel Beceri' FROM (SELECT 1) dummy
-WHERE NOT EXISTS (
+FROM "Courses" WHERE "Title" = '2026 Halk Edebiyatı'
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
-    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 4 Temel Beceri') 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Halk Edebiyatı') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT VİDEO')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Geleneksel Soru Çözüm Kampı Harun Dinçoğlu - Yeni Türk Edb. - Dil Bilgisi - Dünya Edb.') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - İlker Hayat'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Eski Türk Edebiyatı - İlker Hayat') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT(2025 Videolar)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Yeni Türk Edebiyatı ve Dil Bilgisi - Harun DİNÇOĞLU'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 NOKTA ATIŞI Yeni Türk Edebiyatı ve Dil Bilgisi - Harun DİNÇOĞLU') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Canlı')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 Çocuk Edebiyatı'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 Çocuk Edebiyatı') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 - BEYİT ŞERHİ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2025 Edebiyat ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (Nokta Atışı)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Eski Türk Edebiyatı (Nokta Atışı)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Yeni Türk Edebiyatı (Türkçe)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Yeni Türk Edebiyatı (Türkçe)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Türkçe ÖABT Video')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2025 SON BAKIŞ') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Geleneksel 750 Soru Çözüm(CANLI)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı - Murat Hoca'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2026 Eski Türk Edebiyatı - Murat Hoca') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Türkçe ÖABT CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)'), 'Offline' 
+FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Batı Edebiyatı (Akımlar - Sanatçılar) (Nokta Atışı)'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = 'Edebiyat Bilgi Teorileri ve Batı Edebiyatı (Akımlar - Sanatçılar) (Nokta Atışı)') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'Nokta Atışı Konu Tekrar(VİDEO)')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 Ölçme ve Değerlendirme'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 Ölçme ve Değerlendirme') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = 'AGS CANLI')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2024 KAMP Rehberlik'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2024 KAMP Rehberlik') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2024 Eğitim Bilimleri')
+);
+
+INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
+SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri'), 'Offline' 
+FROM "Courses" WHERE "Title" = '2023 Öğrenme Psikolojisi'
+AND NOT EXISTS (
+    SELECT 1 FROM "CourseGroups" 
+    WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '2023 Öğrenme Psikolojisi') 
+    AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '2023 Eğitim Bilimleri')
 );
 
 COMMIT;

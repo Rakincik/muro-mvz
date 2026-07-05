@@ -39,6 +39,7 @@ with open(sql_output_file, "w", encoding="utf-8") as f:
         f.write(f"""
 INSERT INTO "Courses" ("Id", "Title", "Description", "IsActive", "CreatedAt", "TenantId")
 SELECT '{c_id}', '{c.replace("'", "''")}', '', true, CURRENT_TIMESTAMP, '{tenant_id}'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '{c.replace("'", "''")}');
 """)
         
@@ -46,6 +47,7 @@ WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '{c.replace("'", "''")
         f.write(f"""
 INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "TenantId")
 SELECT '{g['id']}', '{g['name'].replace("'", "''")}', CURRENT_TIMESTAMP, '{tenant_id}'
+FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '{g['name'].replace("'", "''")}');
 """)
         
@@ -54,7 +56,7 @@ WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '{g['name'].replace("'",
 INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
 SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '{grup_adi.replace("'", "''")}'), 'Offline' 
 FROM "Courses" WHERE "Title" = '{ders.replace("'", "''")}'
-WHERE NOT EXISTS (
+AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
     WHERE "CourseId" = (SELECT "Id" FROM "Courses" WHERE "Title" = '{ders.replace("'", "''")}') 
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '{grup_adi.replace("'", "''")}')
