@@ -119,7 +119,7 @@ for u in users:
     
     sql = f"""
 INSERT INTO "Users" ("Id", "FirstName", "LastName", "Email", "Username", "PasswordHash", "Role", "IsActive", "CreatedAt", "Phone", "StudentType")
-SELECT gen_random_uuid(), '{safe_fn}', '{safe_ln}', '{safe_e}', '{safe_p}', '{safe_pw}', 2, true, NOW(), '{safe_p}', 0
+SELECT gen_random_uuid(), '{safe_fn}', '{safe_ln}', '{safe_e}', '{safe_p}', '{safe_pw}', 'Student', true, NOW(), '{safe_p}', 'Active'
 WHERE NOT EXISTS (SELECT 1 FROM "Users" WHERE "Username" = '{safe_p}');
 """
     sql_lines.append(sql.strip())
