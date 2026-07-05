@@ -61,7 +61,7 @@ WHERE NOT EXISTS (SELECT 1 FROM "Users" WHERE "Email" = '{u['email'].replace("'"
     for user_id, group_name in group_assignments:
         f.write(f"""
 INSERT INTO "GroupMembers" ("Id", "UserId", "GroupId", "Role", "Status", "AddedAt")
-SELECT gen_random_uuid(), '{user_id}', "Id", 'Student', 'active', CURRENT_TIMESTAMP FROM "Groups" WHERE "Name" = '{group_name.replace("'", "''")}'
+SELECT gen_random_uuid(), '{user_id}', "Id", 2, 'active', CURRENT_TIMESTAMP FROM "Groups" WHERE "Name" = '{group_name.replace("'", "''")}'
 AND NOT EXISTS (
     SELECT 1 FROM "GroupMembers" 
     WHERE "UserId" = '{user_id}' 
