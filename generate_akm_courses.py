@@ -34,16 +34,16 @@ course_dict = {c: str(uuid.uuid4()) for c in courses}
 with open(sql_output_file, "w", encoding="utf-8") as f:
     for c, c_id in course_dict.items():
         f.write(f"""
-INSERT INTO "Courses" ("Id", "Title", "Description", "IsPublished", "CreatedAt")
-SELECT '{c_id}', '{c.replace("'", "''")}', '', true, CURRENT_TIMESTAMP
+INSERT INTO "Courses" ("Id", "Title", "Description", "IsPublished", "CreatedAt", "IsDeleted", "CourseType", "Mode", "Order")
+SELECT '{c_id}', '{c.replace("'", "''")}', '', true, CURRENT_TIMESTAMP, false, 'Online', 'Offline', 0
 FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Courses" WHERE "Title" = '{c.replace("'", "''")}');
 """)
         
     for g in groups.values():
         f.write(f"""
-INSERT INTO "Groups" ("Id", "Name", "CreatedAt")
-SELECT '{g['id']}', '{g['name'].replace("'", "''")}', CURRENT_TIMESTAMP
+INSERT INTO "Groups" ("Id", "Name", "CreatedAt", "IsDeleted")
+SELECT '{g['id']}', '{g['name'].replace("'", "''")}', CURRENT_TIMESTAMP, false
 FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '{g['name'].replace("'", "''")}');
 """)
