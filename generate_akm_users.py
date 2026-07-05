@@ -53,7 +53,7 @@ with open(sql_output_file, "w", encoding="utf-8") as f:
         pw = u["phone"] if u["phone"] else "123456"
         f.write(f"""
 INSERT INTO "Users" ("Id", "FirstName", "LastName", "Email", "Phone", "PasswordHash", "Role", "IsActive", "CreatedAt", "Username")
-SELECT '{u['id']}', '{u['first_name'].replace("'", "''")}', '{u['last_name'].replace("'", "''")}', '{u['email'].replace("'", "''")}', {f"'{u['phone']}'" if u['phone'] else 'NULL'}, '{pw}', 0, true, CURRENT_TIMESTAMP, '{u['email'].replace("'", "''")}'
+SELECT '{u['id']}', '{u['first_name'].replace("'", "''")}', '{u['last_name'].replace("'", "''")}', '{u['email'].replace("'", "''")}', {f"'{u['phone']}'" if u['phone'] else 'NULL'}, '{pw}', 'Student', true, CURRENT_TIMESTAMP, '{u['email'].replace("'", "''")}'
 FROM (SELECT 1) AS dummy
 WHERE NOT EXISTS (SELECT 1 FROM "Users" WHERE "Email" = '{u['email'].replace("'", "''")}');
 """)
@@ -61,7 +61,7 @@ WHERE NOT EXISTS (SELECT 1 FROM "Users" WHERE "Email" = '{u['email'].replace("'"
     for user_id, group_name in group_assignments:
         f.write(f"""
 INSERT INTO "GroupMembers" ("Id", "UserId", "GroupId", "Role", "Status", "AddedAt")
-SELECT gen_random_uuid(), '{user_id}', "Id", 0, 'active', CURRENT_TIMESTAMP FROM "Groups" WHERE "Name" = '{group_name.replace("'", "''")}'
+SELECT gen_random_uuid(), '{user_id}', "Id", 'Student', 'active', CURRENT_TIMESTAMP FROM "Groups" WHERE "Name" = '{group_name.replace("'", "''")}'
 AND NOT EXISTS (
     SELECT 1 FROM "GroupMembers" 
     WHERE "UserId" = '{user_id}' 

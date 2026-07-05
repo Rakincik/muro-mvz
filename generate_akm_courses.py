@@ -51,7 +51,7 @@ WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '{g['name'].replace("'",
     for ders, grup_adi in set(course_group_relations):
         f.write(f"""
 INSERT INTO "CourseGroups" ("Id", "CourseId", "GroupId", "Mode", "AssignedAt")
-SELECT gen_random_uuid(), "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '{grup_adi.replace("'", "''")}'), 1, CURRENT_TIMESTAMP 
+SELECT gen_random_uuid(), "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '{grup_adi.replace("'", "''")}'), 'Offline', CURRENT_TIMESTAMP 
 FROM "Courses" WHERE "Title" = '{ders.replace("'", "''")}'
 AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
