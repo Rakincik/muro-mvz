@@ -32,7 +32,6 @@ for row in s2.iter_rows(min_row=3, values_only=True):
 course_dict = {c: str(uuid.uuid4()) for c in courses}
 
 with open(sql_output_file, "w", encoding="utf-8") as f:
-    
     for c, c_id in course_dict.items():
         f.write(f"""
 INSERT INTO "Courses" ("Id", "Title", "Description", "IsPublished", "CreatedAt")
@@ -51,8 +50,8 @@ WHERE NOT EXISTS (SELECT 1 FROM "Groups" WHERE "Name" = '{g['name'].replace("'",
         
     for ders, grup_adi in set(course_group_relations):
         f.write(f"""
-INSERT INTO "CourseGroups" ("CourseId", "GroupId", "Mode")
-SELECT "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '{grup_adi.replace("'", "''")}'), 'Offline' 
+INSERT INTO "CourseGroups" ("Id", "CourseId", "GroupId", "Mode", "AssignedAt")
+SELECT gen_random_uuid(), "Id", (SELECT "Id" FROM "Groups" WHERE "Name" = '{grup_adi.replace("'", "''")}'), 1, CURRENT_TIMESTAMP 
 FROM "Courses" WHERE "Title" = '{ders.replace("'", "''")}'
 AND NOT EXISTS (
     SELECT 1 FROM "CourseGroups" 
@@ -60,6 +59,5 @@ AND NOT EXISTS (
     AND "GroupId" = (SELECT "Id" FROM "Groups" WHERE "Name" = '{grup_adi.replace("'", "''")}')
 );
 """)
-    # Done
 
 print(f"Generated {len(course_dict)} courses and {len(groups)} groups in {sql_output_file}")
